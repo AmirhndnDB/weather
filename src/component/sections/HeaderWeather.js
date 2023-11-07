@@ -36,7 +36,7 @@ function HeaderWeather(){
                 <div className="icon-box">
                 <img
                   className="weather-icon-image"
-                  src="/Png/partlyCloudy-day.png"
+                  src=""
                   alt=""
                 />
                 <p className="kind-of-weather">{presentTime && presentTime.current && presentTime.current.condition && presentTime.current.condition.text} 24-30</p>
