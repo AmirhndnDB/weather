@@ -3,6 +3,7 @@ import WeathersData from "./WeathersData";
 import { useDispatch,useSelector } from "react-redux";
 import { fetchForcastData } from "../../store";
 import { useEffect } from "react";
+import ImageSelector from "./ImageSelector";
 function HeaderWeather(){
     const dispatch = useDispatch();
 
@@ -34,11 +35,7 @@ function HeaderWeather(){
             </div>
             <div className="data-from-api">
                 <div className="icon-box">
-                <img
-                  className="weather-icon-image"
-                  src=""
-                  alt=""
-                />
+                  <ImageSelector CN={"weather-icon-image"} condition={"rainy"} />
                 <p className="kind-of-weather">{presentTime && presentTime.current && presentTime.current.condition && presentTime.current.condition.text} 24-30</p>
                 </div>
                 <WeathersData title= {"temperetoure"} value={presentTime && presentTime.current && presentTime.current.temp_c} mark={"C^"} />
@@ -47,15 +44,14 @@ function HeaderWeather(){
             </div>
 
             <div className="pishbini-havaye-aty">
-                <FutearHoursWeather />
-                <FutearHoursWeather />
-                <FutearHoursWeather/>
-                <FutearHoursWeather/>
-                <FutearHoursWeather/>
-                <FutearHoursWeather/>
-                <FutearHoursWeather/>
-                <FutearHoursWeather/>
-
+                <FutearHoursWeather  condition = {"Sunny"} />
+                <FutearHoursWeather  condition = {"Overcast"} />
+                <FutearHoursWeather  condition = {"clodSun"}/>
+                <FutearHoursWeather  condition = {"moon"}/>
+                <FutearHoursWeather  condition = {"moonClod"}/>
+                <FutearHoursWeather  condition = {"clod-drizwl"}/>
+                <FutearHoursWeather  condition = {"snowiy"}/>
+                <FutearHoursWeather  condition = {"clody"}/>
             </div>
         </section>
     );

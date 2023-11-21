@@ -1,9 +1,9 @@
-import { useDispatch,useSelector } from "react-redux";
-import { changeFutearDate,changeFutearDay,featchTimeZoneThunk } from "../../store";
-import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import ImageSelector from "./ImageSelector";
 
 
-function FutearDaysPanel({dayNumber}){
+
+function FutearDaysPanel({dayNumber,imgeUrl}){
 
 
   const Day = useSelector((state)=> state.times.futearDay[dayNumber])
@@ -19,16 +19,17 @@ function FutearDaysPanel({dayNumber}){
         <div className="tim-box">
           <div className="day">{Day}</div>
           <span className="date">                
-            {FDate},{date.getMonth()},
-            {date.getFullYear()},{date.getHours()}
-            :{date.getMinutes()}
+            {date.getFullYear()}-
+            {date.getMonth()}-
+            {FDate}
           </span>
         </div>
-        <img
-          src=""
+        <ImageSelector CN={"img"} condition={imgeUrl}/>
+        {/* <img
+          src={imgeUrl}
           className="img"
           alt=""
-        />
+        /> */}
         <div className="value-panel">
           <h3 className="value v-temp">30^</h3>
           <p className="title-panel">temperetor</p>

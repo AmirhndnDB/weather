@@ -124,12 +124,10 @@
   }
   .uv-index {
     background-color: #359bff;
-    padding: 40px;
     grid-area: U;
   }
   .sun-location {
     background-color: #359bff;
-    padding: 40px;
     grid-area: S;
   }
 
@@ -165,7 +163,7 @@
     font-style: normal;
     padding-bottom: 0;
     margin-bottom: 0;
-    margin-top: 26px;
+    margin-top: 10px;
     text-align: center;
   }
   .title {
@@ -326,7 +324,7 @@
     gap: 15px;
   }
   .news-panel {
-    background-image: url(../store/png/vecteezy_vector-illustration-of-weather-condition-forecast-icon-set_22701389.jpg);
+    background-image: url(../component/png/vecteezy_vector-illustration-of-weather-condition-forecast-icon-set_22701389.jpg);
     border-radius: 20px;
     padding: 20px;
   }
@@ -342,3 +340,137 @@
     margin: 0;
     font-size: 14px;
   }
+
+
+  /* sun-location */
+  .sun-location {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20px 16px 20px ;
+  }
+.sun-box {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.axis-sun {
+  border-top: dashed #c2e1ff 5px;
+  border-radius: 50%;
+  padding: 0;
+  margin-bottom: -70px;
+  width: 70%;
+  height: 200px;
+  position: relative;
+}
+
+.erth-border {
+  border: solid #c2e1ff 1px;
+  width: 120%;
+  position: relative;
+  right: 24px;
+  top: 95px;
+}
+
+.sun {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 88px;
+  /* bottom: 188px; */
+  left: -15px;
+  /* left: 65px; */
+  /* left: 145px; */
+}
+.sun-tims {
+  display: flex;
+  gap: 70px;
+  justify-content: space-between;
+}
+.sun-tims-items {
+  margin-top: -20px;
+}
+.sun-tims-item-left{
+  margin-left: 30px
+}
+.sun-tims-item-right{
+  margin-right: 30px
+}
+/* 
+ */
+/*  */
+/* uv index */
+
+
+.uv-index {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.uv-box {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+.uv-amont {
+  border-top: 5px solid #e9dc79;
+  border-radius: 50%;
+  margin-bottom: -70px;
+  width: 70%;
+  height: 200px;
+  position: relative;
+}
+.uv-amont-n {
+  position: absolute;
+}
+.n1 {
+  left: 15px;
+  bottom: 97px;
+}
+.n2 {
+  left: 28.67px;
+  bottom: 128.28px;
+}
+.n3 {
+  left: 57.33px;
+  bottom: 149.234px;
+}
+.n4 {
+  left: 90px;
+  bottom: 158px;
+}
+.n5 {
+  left: 122.67px;
+  bottom: 149.234px;
+}
+.n6 {
+  left: 151.33px;
+  bottom: 128.28px;
+}
+.n7 {
+  left: 170px;
+  bottom: 97px;
+}
+.sun-uv {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 88px;
+  /* bottom: 188px; */
+  left: -15px;
+  /* left: 81px; */
+  /* left: 177px; */
+}
+
+.erth-border {
+  border: solid #c2e1ff 1px;
+  width: 120%;
+  position: relative;
+  right: 24px;
+  top: 95px;
+}
+
+.uv-text {
+  margin-top: -20px;
+  margin-left: 70px;
+}

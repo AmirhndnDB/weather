@@ -1,24 +1,17 @@
-
 import Iconz from "./Iconz";
 
 
 
 
 
-function FutearHoursWeather (){
 
-
-
-
-
-
-
-    return(
+function FutearHoursWeather ({condition}){
+   return(
         <div className="pishbini-har-saat">
         <span>
-          9:00
+        9:00
         </span>
-        <Iconz/>
+        <Iconz  condition={condition}/>
         <span>45^</span>
       </div>
     );
