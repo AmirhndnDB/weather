@@ -7,6 +7,7 @@ const searchSlice = createSlice({
   name: 'header',
   initialState: {
     searchTerm: '',
+    header:"" ,
     receivedData: [],
     isLoading: false,
     error: null,
@@ -14,6 +15,9 @@ const searchSlice = createSlice({
   reducers: {
     changeSearchTerm(state, action) {
       state.searchTerm = action.payload;
+    },
+    changeHeader (state, action){
+      state.header =  action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -32,5 +36,5 @@ const searchSlice = createSlice({
   },
 });
 
-export const {changeSearchTerm } = searchSlice.actions;
+export const {changeSearchTerm, changeHeader } = searchSlice.actions;
 export const headerReducer = searchSlice.reducer;

@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { changeSearchTerm, fetchSearchData ,fetchForcastData } from "../store";
+import { changeSearchTerm, fetchSearchData ,changeHeader,fetchForcastData} from "../store";
 
 
 
@@ -22,6 +22,12 @@ function SearchLocation() {
     
   };
 
+  const handleChangeHeader = (e)=>{
+    const itemValue = e.target.innerText;
+    dispatch(changeHeader(itemValue))
+    dispatch(fetchForcastData(itemValue))
+  }
+
   return (
     <>
       <div className="location-names">
@@ -42,10 +48,11 @@ function SearchLocation() {
           value={searchTerm}
           onChange={handleSearchTermChange}
           />
-        <ul>
-          {locationNames.slice(0, 4).map((locationName)=>(
-            <li 
+        <ul className="search-result">
+          {locationNames.slice(0, 6).map((locationName)=>(
+            <li className="search-result-item"
             key={locationName.id}
+            onClick={handleChangeHeader}
             >
               {locationName.name}
             </li>

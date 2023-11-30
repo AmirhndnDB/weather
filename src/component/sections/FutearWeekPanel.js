@@ -3,10 +3,10 @@ import ImageSelector from "./ImageSelector";
 
 
 
-function FutearDaysPanel({dayNumber,imgeUrl}){
+function FutearWeekPanel({dayNumber,imgeUrl}){
 
 
-  const Day = useSelector((state)=> state.times.futearDay[dayNumber])
+  const futearWeek = useSelector((state)=> state.times.futearWeek[weekNumber])
   
 
 
@@ -32,4 +32,4 @@ function FutearDaysPanel({dayNumber,imgeUrl}){
     );
 }
 
-export default FutearDaysPanel;
+export default FutearWeekPanel;

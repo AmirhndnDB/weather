@@ -6,7 +6,11 @@ const forcastWeatherSlice  = createSlice({
     initialState:{
 
         presentTime:[],
+        temperType:'c',
+        forcastPeriodType:'daly',
+        chartDataType : 'Humdy',
         futearDay:["Sun","Mon","Tus","Wen","Thu","Fri","Sat"],
+        futearWeek:["week1","week2","week3","week4"],
         isLoading: false,
         error: null,
         
@@ -15,6 +19,18 @@ const forcastWeatherSlice  = createSlice({
         changeFutearDay(state,action){
             state.futearDay = action.payload;
         },
+        changeTemperType(state, action){
+          state.temperType = action.payload
+          
+        },
+        changeForcastPeriodType(state,action){
+          state.forcastPeriodType = action.payload
+        },
+        changeChartDataType(state , action) {
+          state.chartDataType = action.payload
+        }
+
+        
     },
     extraReducers: (builder) => {
         builder
@@ -33,5 +49,10 @@ const forcastWeatherSlice  = createSlice({
     
 });
 
-export const {changeFutearDay} = forcastWeatherSlice.actions
+export const {
+  changeFutearDay,
+  changeTemperType,
+  changeForcastPeriodType,
+  changeChartDataType
+} = forcastWeatherSlice.actions
 export const timesReducer = forcastWeatherSlice.reducer;

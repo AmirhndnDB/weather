@@ -5,14 +5,16 @@ import axios from 'axios';
 
 
 export  const fetchForcastData = createAsyncThunk(
+    
 
     'times/fetch/pending',
-    async(userIP) =>{
+    async( userIP) =>{
+      const queryParams =  userIP;
         const options = {
             method: 'GET',
             url: 'https://weatherapi-com.p.rapidapi.com/forecast.json',
             params: {
-              q: userIP,
+              q: queryParams ,
               days: "1"
             },
             headers: {

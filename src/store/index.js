@@ -1,7 +1,7 @@
 // store.js
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
-import { headerReducer, changeSearchTerm } from './slices/searchSlice';
-import { timesReducer,changeFutearDay} from "./slices/forcastWeatherSlice";
+import { headerReducer, changeSearchTerm,changeHeader } from './slices/searchSlice';
+import { timesReducer,changeFutearDay,changeTemperType,changeForcastPeriodType,changeChartDataType} from "./slices/forcastWeatherSlice";
 import { astromyReducer,changeAstromyData } from "./slices/astromySlice";
 import { historyReducer } from "./slices/historySlice";
 import { ipLookupReducer } from "./slices/ipLookup";
@@ -39,5 +39,9 @@ export {
   fetchTimeZone,
   changeAstromyData,
   changeSearchTerm,
-  changeFutearDay
+  changeHeader,
+  changeFutearDay,
+  changeTemperType,
+  changeForcastPeriodType,
+  changeChartDataType,
 };
