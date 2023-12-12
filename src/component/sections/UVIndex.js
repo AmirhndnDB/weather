@@ -1,5 +1,37 @@
+import {useSelector } from "react-redux";
 import ImageSelector from "./ImageSelector";
+
+
+
 function UVIndex(){
+
+    const presentTime = useSelector(state => state.times.presentTime);
+    const UVIndex = presentTime && presentTime.current  && presentTime.current.uv;
+    console.log(UVIndex);
+    function getUVClassName(UVIndex) {
+      if (UVIndex === 1) {
+        return 'UV1';
+      } else if (UVIndex === 2) {
+        return 'UV2';
+      } else if (UVIndex === 3) {
+        return 'UV3';
+      } else if (UVIndex === 4) {
+        return 'UV4';
+      } else if (UVIndex === 5) {
+        return 'UV5';
+      } else if (UVIndex === 6) {
+        return 'UV6';
+      } else if (UVIndex === 7) {
+        return 'UV7';
+      } else {
+        return ''; // default class name or handle other cases
+      }
+    }
+    const ClassName = getUVClassName(UVIndex);
+    console.log(ClassName)
+
+
+
     return (
         <section className="grid-items uv-index">
         <div className="uv-box">
@@ -12,8 +44,8 @@ function UVIndex(){
             <p className="uv-amont-n n5">5</p>
             <p className="uv-amont-n n6">6</p>
             <p className="uv-amont-n n7">7</p>
-            <div className="erth-border"></div>
-            <ImageSelector condition={"sunny"} CN={"sun-uv"} />
+            <div className="erth-border-uv"></div>
+            <ImageSelector condition={"Sunny"} CN={"sun-uv "+ ClassName} />
           </div>
         </div>
         <span className="uv-text">eat watermelon 1 or tow</span>
@@ -22,10 +54,3 @@ function UVIndex(){
     );
 }
 export default UVIndex;
-
-
-//  <section class="uvIndex grid">
-{/* <img src="./Png/suny.png" alt="" class="sun-uv" /> */}
-
-
-//       </section>

@@ -15,7 +15,7 @@ export  const fetchForcastData = createAsyncThunk(
             url: 'https://weatherapi-com.p.rapidapi.com/forecast.json',
             params: {
               q: queryParams ,
-              days: "1"
+              days: "7"
             },
             headers: {
               'X-RapidAPI-Key': 'da52e93f65msh63dacb488dfbddcp1eb624jsne47626bd426a',

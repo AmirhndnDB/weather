@@ -20,25 +20,42 @@ function Iconz ({condition}){
         case "Overcast":
             return <BsFillCloudFog2Fill className="weather-icon"/>
             break
-            case "clody" :
-            return <BsFillBrightnessAltHighFill className="weather-icon"/>
+        case "Cloudy" :
+            return <BsFillCloudFog2Fill className="weather-icon"/>
             break
+        case "Fog" :
+                return <BsFillCloudFog2Fill className="weather-icon"/>
+                break    
         case "clodSun":
             return <BsFillCloudDrizzleFill className="weather-icon"/>
             break    
-        case "moon" :
+        case "Patchy rain possible" :
             return <BsFillCloudHailFill className="weather-icon"/>
             break
-        case "moonClod":
-            return <BsFillCloudLightningRainFill className="weather-icon"/>
+        case "Light drizzle" :
+            return <BsFillCloudHailFill className="weather-icon"/>
+            break    
+        case "Patchy light drizzle" :
+            return <BsFillCloudHailFill className="weather-icon"/>
+            break  
+        case "Light rain shower" :
+            return <BsFillCloudSleetFill className="weather-icon"/>
+            break 
+        case "Mist":
+            return <BsFillCloudFog2Fill className="weather-icon"/>
             break
-            case "clod-drizwl" :
+            case "Partly cloudy" :
             return <BsFillCloudSunFill className="weather-icon"/>
             break
         case "snowiy":
             return <BsFillCloudSnowFill className="weather-icon"/>
-            break             
-    
+            break    
+        case "Clear" : 
+            return <BsFillMoonFill className="weather-icon"/>
+            break
+
+            
+            
     }
 
     

@@ -23,25 +23,31 @@ function ImageSelector({CN,condition}){
 
 
     switch(condition){
-        case "sunny" :
+        case "Sunny"  :
             return <img src={SunImg} alt="ax" className={CN}/>
             break
         case "SunShower":
             return <img src={SunShower} alt="ax" className={CN}/>
             break
-        case "blusteri":
+        case "Overcast":
             return <img src={Blusteri} alt="ax" className={CN}/>
             break
         case "snowy":
             return <img src={Snowy} alt="ax" className={CN}/>
             break
-        case "rainy":
+        case "Patchy rain possible":
             return <img src={Rainy} alt="ax" className={CN}/>
             break
-        case "partlyCloudy":
+        case "Light drizzle":
+            return <img src={Rainy} alt="ax" className={CN}/>
+            break    
+        case "Light rain":
+            return <img src={Rainy} alt="ax" className={CN}/>
+            break        
+        case 'Partly cloudy':
             return <img src={PartlyCloudy} alt="ax" className={CN}/>
             break
-        case "moon":
+        case "Clear":
             return <img src={FullMoon} alt="ax" className={CN}/>
             break
         case "tunder":
@@ -53,6 +59,14 @@ function ImageSelector({CN,condition}){
         case "tornado":
             return <img src={Tornardo} alt="ax" className={CN}/>
             break
+        case 'Mist'    :
+            return <img src={CloudyNight} alt="ax" className={CN}/>
+            break
+        case 'Moderate rain' :
+            return <img src={Rainy} alt="ax" className={CN}/>
+            break
+
+
 
     }
 

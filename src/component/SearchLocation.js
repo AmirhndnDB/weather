@@ -9,6 +9,11 @@ function SearchLocation() {
   const searchTerm = useSelector((state) => state.header.searchTerm);
   const locationNames = useSelector((state) => state.header.receivedData);
   const userLocationName = useSelector((state)=>state.times.presentTime);
+  const Country = userLocationName && userLocationName.location && userLocationName.location.country ; 
+  const LocName = userLocationName && userLocationName.location && userLocationName.location.name ; 
+  const TZID = userLocationName && userLocationName.location && userLocationName.location.tz_id ; 
+  
+
 
 
   
@@ -33,11 +38,11 @@ function SearchLocation() {
       <div className="location-names">
           <h4
            className="location-name">
-            {userLocationName && userLocationName.location && userLocationName.location.country}
+            {Country}
             -
-            {userLocationName && userLocationName.location && userLocationName.location.name}
+            {LocName}
             -
-            {userLocationName && userLocationName.location && userLocationName.location.tz_id}
+            {TZID}
           </h4>
       </div>
 

@@ -10,7 +10,7 @@ const forcastWeatherSlice  = createSlice({
         forcastPeriodType:'daly',
         chartDataType : 'Humdy',
         futearDay:["Sun","Mon","Tus","Wen","Thu","Fri","Sat"],
-        futearWeek:["week1","week2","week3","week4"],
+        futearWeek:["week1","week2","week3","week4",'week5',"week6","week7"],
         isLoading: false,
         error: null,
         

@@ -1,17 +1,30 @@
  import FutearHoursWeather from "./FutearsHoursWeather";
 import WeathersData from "./WeathersData";
 import { useDispatch,useSelector } from "react-redux";
-import { fetchForcastData } from "../../store";
+import { fetchForcastData ,changeTemperType} from "../../store";
 import { useEffect } from "react";
 import ImageSelector from "./ImageSelector";
+import useLocalTime from "../hooks/UseLocalTime";
+
+
+
+
 function HeaderWeather(){
     const dispatch = useDispatch();
+    const Hours = useLocalTime();
+
+
+
+    const temperType = useSelector(state => state.times.temperType);
+    const presentTime = useSelector(state => state.times.presentTime);
+
+    
+ 
 
 
     const {isLoading,error} = useSelector((state)=>{
         return state.times
     })
-        const presentTime = useSelector(state => state.times.presentTime)
     useEffect(()=> {
       dispatch(fetchForcastData());
     },[dispatch]);
@@ -26,32 +39,79 @@ function HeaderWeather(){
 
 
 
+    
+    const conditionText = presentTime && presentTime.current && presentTime.current.condition && presentTime.current.condition.text ;
+    const LocalTime = presentTime && presentTime.location && presentTime.location.localtime ; 
+    const CelcTemper = presentTime && presentTime.current && presentTime.current.temp_c ;
+    const FarenTemper = presentTime && presentTime.current && presentTime.current.temp_f ;
+    const Humidity = presentTime && presentTime.current && presentTime.current.humidity ;
+    const WindSpid = presentTime && presentTime.current && presentTime.current.wind_kph ;
+    const maxTempC = presentTime && presentTime.forecast && presentTime.forecast.forecastday && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day.maxtemp_c;
+    const minTempC = presentTime && presentTime.forecast && presentTime.forecast.forecastday && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day.mintemp_c;
+    const maxTempF = presentTime && presentTime.forecast && presentTime.forecast.forecastday && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day.maxtemp_f;
+    const minTempF = presentTime && presentTime.forecast && presentTime.forecast.forecastday && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day.mintemp_f;
+
+  
+   console.log(conditionText);
+   console.log(maxTempC);
+
+       
+   const hours = Hours
+   let oneH = (hours === 23 ? 0: hours + 1); 
+   let towH = (oneH === 23 ? 0 : oneH + 1) ;
+   let threH = (towH === 23 ? 0 : towH + 1); 
+   let forH =  (threH === 23 ? 0: threH + 1); 
+   let foiveH =  (forH === 23 ? 0 :forH + 1); 
+   let sixH =  (foiveH === 23 ? 0 :foiveH + 1); 
+   let sevenH =  (sixH === 23 ? 0 :sixH + 1);
+ 
+
    
+   
+
+
+   
+
+
     return (
         <section className="grid-items the-header-weather">
             <div className="date-time">
-                {presentTime && presentTime.location && presentTime.location.localtime}
+                {LocalTime}
                 
             </div>
             <div className="data-from-api">
                 <div className="icon-box">
-                  <ImageSelector CN={"weather-icon-image"} condition={"rainy"} />
-                <p className="kind-of-weather">{presentTime && presentTime.current && presentTime.current.condition && presentTime.current.condition.text} 24-30</p>
+                  <ImageSelector CN={"weather-icon-image"} condition={conditionText} />
+                <p className="kind-of-weather">{conditionText} 
+                  {temperType === 'c'
+                  ? minTempC 
+                  : minTempF}-
+                  {temperType === 'c' 
+                  ? maxTempC 
+                  : maxTempF}
+                </p>
                 </div>
-                <WeathersData title= {"temperetoure"} value={presentTime && presentTime.current && presentTime.current.temp_c} mark={"C^"} />
-                <WeathersData title= {"humidityr"} value={presentTime && presentTime.current && presentTime.current.humidity} mark={"%"} />
-                <WeathersData title= {"windSpid"} value={presentTime && presentTime.current && presentTime.current.wind_kph} mark={"km/h"}/>
+                <WeathersData title= {"temperetoure"} value={
+                    temperType === 'c'
+                    ? CelcTemper
+                    : FarenTemper
+                    } mark={
+                        temperType === 'c'
+                        ? 'C^'
+                        : 'F^'
+                        } />
+                <WeathersData title= {"humidity"} value={Humidity} mark={"%"} />
+                <WeathersData title= {"windSpid"} value={WindSpid} mark={"km/h"}/>
             </div>
 
             <div className="pishbini-havaye-aty">
-                <FutearHoursWeather  condition = {"Sunny"} />
-                <FutearHoursWeather  condition = {"Overcast"} />
-                <FutearHoursWeather  condition = {"clodSun"}/>
-                <FutearHoursWeather  condition = {"moon"}/>
-                <FutearHoursWeather  condition = {"moonClod"}/>
-                <FutearHoursWeather  condition = {"clod-drizwl"}/>
-                <FutearHoursWeather  condition = {"snowiy"}/>
-                <FutearHoursWeather  condition = {"clody"}/>
+                <FutearHoursWeather hoursNumb={oneH}  />
+                <FutearHoursWeather hoursNumb={towH} />
+                <FutearHoursWeather hoursNumb={threH} />
+                <FutearHoursWeather hoursNumb={forH} />
+                <FutearHoursWeather hoursNumb={foiveH} />
+                <FutearHoursWeather hoursNumb={sixH } />
+                <FutearHoursWeather hoursNumb={sevenH } />
             </div>
         </section>
     );

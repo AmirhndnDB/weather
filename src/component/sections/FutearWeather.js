@@ -7,6 +7,8 @@ function FutearWeather(){
   const forcastPeriodType = useSelector(state => state.times.forcastPeriodType);
 
 
+
+
   const handleChangePeriodType = (forcastPeriodType) =>{
     dispatch(changeForcastPeriodType(forcastPeriodType))
   }
@@ -28,12 +30,12 @@ function FutearWeather(){
             </div>
         </div>
         <div className="days">
-        <FutearDaysPanel imgeUrl={"sunny"} dayNumber={0}/>
-        <FutearDaysPanel imgeUrl={"SunShower"} dayNumber={1}/>
-        <FutearDaysPanel imgeUrl={"blusteri"} dayNumber={2}/>
-        <FutearDaysPanel imgeUrl={"snowy"} dayNumber={3}/>
-        <FutearDaysPanel imgeUrl={"rainy"} dayNumber={4}/>
-        <FutearDaysPanel imgeUrl={"tunderStorm"} dayNumber={5}/>
+        <FutearDaysPanel  dayNumber={0} futearCast={0} />
+        <FutearDaysPanel  dayNumber={1}futearCast={1} />
+        <FutearDaysPanel  dayNumber={2}futearCast={2} />
+        <FutearDaysPanel  dayNumber={3}futearCast={0} />
+        <FutearDaysPanel  dayNumber={4}futearCast={1} />
+        <FutearDaysPanel  dayNumber={5}futearCast={2} />
         </div>
         </section>
     );
