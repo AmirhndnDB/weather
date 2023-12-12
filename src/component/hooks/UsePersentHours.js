@@ -4,7 +4,7 @@ const useTimeToMinutes = (time) => {
   const [minutes, setMinutes] = useState(0);
 
   const convertTimeToMinutes = (timeString) => {
-    const timeFormat = timeString.match(/(\d+):(\d+) (\w+)/);
+    const timeFormat = timeString?.match(/(\d+):(\d+) (\w+)/);
     if (timeFormat) {
       let hours = parseInt(timeFormat[1], 10);
       const minutes = parseInt(timeFormat[2], 10);

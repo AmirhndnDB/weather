@@ -46,6 +46,8 @@ const forcastWeatherSlice  = createSlice({
             state.error = action.error;
           });
       },
+
+      
     
 });
 

@@ -93,6 +93,8 @@
       border-radius: 30px;
       height: 35px;
       border: none;
+      outline: none;
+    padding: 0 4% 0 4%;
       background-color: #c5dcf3;
   }
   
