@@ -1,9 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
 import { changeSearchTerm, fetchSearchData ,changeHeader,fetchForcastData} from "../store";
+import { useState } from "react";
+import UseIP from "./hooks/UseIP";
+
+
+
 
 
 
 function SearchLocation() {
+
+const [userInput,setUserInput]= useState('');
+
   const dispatch = useDispatch();
 
   const searchTerm = useSelector((state) => state.header.searchTerm);
@@ -45,7 +53,6 @@ function SearchLocation() {
             {TZID}
           </h4>
       </div>
-
       <div className="search">
         <input
           className="search-bar"
@@ -54,7 +61,7 @@ function SearchLocation() {
           onChange={handleSearchTermChange}
           />
         <ul className="search-result">
-          {locationNames.slice(0, 6).map((locationName)=>(
+          {locationNames.slice(0, 3).map((locationName)=>(
             <li className="search-result-item"
             key={locationName.id}
             onClick={handleChangeHeader}

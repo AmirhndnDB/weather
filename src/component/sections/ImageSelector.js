@@ -19,12 +19,20 @@ import Coldest from "../png/weryCold.png";
 import Hotest from "../png/weryhot.png";
 import WindyCloudy from "../png/windy-cloudy.png";
 
-function ImageSelector({CN,condition}){
+function ImageSelector({CN,condition,X,Y}){
+    const sunStyle = {
+        left:`${X}%`,
+        bottom:`${Y}%`
+
+    }
 
 
     switch(condition){
         case "Sunny"  :
             return <img src={SunImg} alt="ax" className={CN}/>
+            break
+        case "Sun"  :
+            return <img src={SunImg} alt="ax" className={CN} style={sunStyle}/>
             break
         case "SunShower":
             return <img src={SunShower} alt="ax" className={CN}/>

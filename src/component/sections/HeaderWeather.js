@@ -18,9 +18,6 @@ function HeaderWeather(){
     const temperType = useSelector(state => state.times.temperType);
     const presentTime = useSelector(state => state.times.presentTime);
 
-    
- 
-
 
     const {isLoading,error} = useSelector((state)=>{
         return state.times
@@ -40,23 +37,26 @@ function HeaderWeather(){
 
 
     
-    const conditionText = presentTime && presentTime.current && presentTime.current.condition && presentTime.current.condition.text ;
-    const LocalTime = presentTime && presentTime.location && presentTime.location.localtime ; 
-    const CelcTemper = presentTime && presentTime.current && presentTime.current.temp_c ;
-    const FarenTemper = presentTime && presentTime.current && presentTime.current.temp_f ;
-    const Humidity = presentTime && presentTime.current && presentTime.current.humidity ;
-    const WindSpid = presentTime && presentTime.current && presentTime.current.wind_kph ;
-    const maxTempC = presentTime && presentTime.forecast && presentTime.forecast.forecastday && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day.maxtemp_c;
-    const minTempC = presentTime && presentTime.forecast && presentTime.forecast.forecastday && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day.mintemp_c;
-    const maxTempF = presentTime && presentTime.forecast && presentTime.forecast.forecastday && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day.maxtemp_f;
-    const minTempF = presentTime && presentTime.forecast && presentTime.forecast.forecastday && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day && presentTime.forecast.forecastday[0] && presentTime.forecast.forecastday[0].day.mintemp_f;
+    const conditionText = presentTime?.current?.condition?.text ;
+    const LocalTime = presentTime?.location?.localtime ; 
+    const CelcTemper = presentTime?.current?.temp_c ;
+    const FarenTemper = presentTime?.current?.temp_f ;
+    const Humidity = presentTime?.current?.humidity ;
+    const WindSpid = presentTime?.current?.wind_kph ;
+    const maxTempC = presentTime?.forecast?.forecastday[0]?.day?.maxtemp_c;
+    const minTempC = presentTime?.forecast?.forecastday[0]?.day?.mintemp_c;
+    const maxTempF = presentTime?.forecast?.forecastday[0]?.day?.maxtemp_f;
+    const minTempF = presentTime?.forecast?.forecastday[0]?.day?.mintemp_f;
 
   
-   console.log(conditionText);
-   console.log(maxTempC);
 
        
-   const hours = Hours
+    const hours = Hours
+  
+    
+    console.log(conditionText,LocalTime);
+    console.log(maxTempC);
+   console.log(hours)
    let oneH = (hours === 23 ? 0: hours + 1); 
    let towH = (oneH === 23 ? 0 : oneH + 1) ;
    let threH = (towH === 23 ? 0 : towH + 1); 

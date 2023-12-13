@@ -7,34 +7,36 @@ const presentTime = useSelector(state => state.times.presentTime);
 const sunrise = presentTime?.forecast?.forecastday[0]?.astro?.sunrise;
 const sunset =presentTime?.forecast?.forecastday[0]?.astro?.sunset;
 
-const nowTime = '4:49 PM' ;
-const sunRTMin =useTimeToMinutes(sunrise) ;
-const sunRTMax =useTimeToMinutes('04:51 PM') ;
-const NOWTime =useTimeToMinutes(nowTime) ;
+const nowTime = '3:23 PM' ;
+const Z0 =useTimeToMinutes(sunrise) ;
+const ZMax =useTimeToMinutes(sunset) ;
+const Z =useTimeToMinutes(nowTime) ;
+const X0 = -8
+const X =  (((Z - Z0)/(ZMax - Z0) )* 100) + X0 ; 
+const b = 49 ; 
+const a =  50 ;
+const alfa = 42 ;
+const beta = 45 ;
+const delta = (a**2) - ((X - alfa)**2)
+const Y = ((a*((delta)**(0.5)))/b) + beta ;
 
 
-const TEyShodeSun = (NOWTime - sunRTMin)
-const dayTimeMinets = (sunRTMax - sunRTMin )
-const PersentTeyShode = ((TEyShodeSun/dayTimeMinets) - 0.42);
-const a = 0.21 ;
-const b = 0.49 ;
-const beta = 0.45 ;
-const Y = ((a* ((b)**2 - (PersentTeyShode)**2)**0.5)/a) ;
+
+
+
 
 
 console.log(sunrise);
 console.log(sunset);
 
-console.log(presentTime);
-
-console.log(sunRTMax,sunRTMin)
+console.log(Z0,ZMax,Z,X,Y)
 
     return (
         <section className="grid-items sun-location">
           <div class="sun-box">
           <div>sunris</div>
           <div className="axis-sun">
-           <ImageSelector CN={"sun"} condition={"Sunny"}/>
+           <ImageSelector  CN={"sun"} condition={"Sun"} X={X} Y={Y}/>
             <div className="erth-border-sun"></div>
           </div>
           <div>sunset</div>

@@ -94,7 +94,7 @@
       height: 35px;
       border: none;
       outline: none;
-    padding: 0 4% 0 4%;
+    padding: 5% 10% 5% 10%;
       background-color: #c5dcf3;
   }
   
@@ -428,9 +428,9 @@
   z-index: 5;
   position: absolute;
   /* bottom: 45%; */
-  bottom: 94%;
+  /* bottom: 94%; */
   /* left: -8%; */
-  left: 42%;
+  /* left: 42%; */
   /* left: 92%; */
 }
 .sun-tims {
