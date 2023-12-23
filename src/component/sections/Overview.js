@@ -1,6 +1,5 @@
 import React from "react";
 import { LineChart } from "./LineChart";
-import { UserData } from "./ChartData";
 import { useDispatch, useSelector } from "react-redux";
 import { changeChartDataType } from "../../store";
 import { useCalculatedValues } from "./CalculateAvrageData";
@@ -16,11 +15,11 @@ function Overview() {
   };
 
   const userData =({
-    labels: UserData.map((data) => data.month),
+    labels: datas.map((data) => data.month),
     datasets: [
       {
         label: chartDataType,
-        data: UserData.map((data) => {
+        data: datas.map((data) => {
           if (chartDataType === "Humdy") {
             return data.Humdy;
           } else if (chartDataType === "rain") {
