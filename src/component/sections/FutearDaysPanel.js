@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import ImageSelector from "./ImageSelector";
 
 
-function FutearDaysPanel({dayNumber,imgeUrl,futearCast}){
+function FutearDaysPanel({dayNumber,futearCast}){
 
 
   const forcastPeriodType = useSelector(state => state.times.forcastPeriodType);
@@ -13,9 +13,9 @@ function FutearDaysPanel({dayNumber,imgeUrl,futearCast}){
 
 
 
-  const avTempC = presentTime && presentTime.forecast && presentTime.forecast.forecastday &&  presentTime.forecast.forecastday[futearCast].day.avgtemp_c;
-  const avTempF = presentTime && presentTime.forecast && presentTime.forecast.forecastday &&  presentTime.forecast.forecastday[futearCast].day.avgtemp_f;
-  const Condition =  presentTime && presentTime.forecast && presentTime.forecast.forecastday &&  presentTime.forecast.forecastday[futearCast].day.condition.text;
+  const avTempC = presentTime?.forecast?.forecastday[futearCast]?.day?.avgtemp_c;
+  const avTempF = presentTime?.forecast?.forecastday[futearCast]?.day?.avgtemp_f;
+  const Condition =  presentTime?.forecast?.forecastday[futearCast]?.day?.condition?.text;
 
   console.log(Condition);
 

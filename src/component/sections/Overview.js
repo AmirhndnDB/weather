@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { LineChart } from "./LineChart";
 import { UserData } from "./ChartData";
 import { useDispatch, useSelector } from "react-redux";
 import { changeChartDataType } from "../../store";
-
+import { useCalculatedValues } from "./CalculateAvrageData";
 function Overview() {
   const dispatch = useDispatch();
+  const datas =  useCalculatedValues();
+  console.log(datas)
   const chartDataType = useSelector((state) => state.times.chartDataType);
+
 
   const handleChangeChartDataType = (chartDataType) => {
     dispatch(changeChartDataType(chartDataType));

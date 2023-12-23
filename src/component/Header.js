@@ -12,7 +12,7 @@ function Header(){
    }
     return (
         <header className="header">
-            <SearchLocation className="search"/>
+            <SearchLocation className="search-location"/>
             <div className="language-name-box">
                 <select className="language-name"  name="job" id="job">
                      <option >ENG</option>
@@ -38,6 +38,3 @@ function Header(){
 
 
 export default  Header;
-
-
-

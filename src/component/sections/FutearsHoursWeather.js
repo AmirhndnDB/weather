@@ -12,9 +12,9 @@ function FutearHoursWeather ({hoursNumb}){
 
 
 
-console.log(ConditionText)
-console.log(hoursNumb)
-console.log(hoursTime)
+// console.log(ConditionText)
+// console.log(hoursNumb)
+// console.log(hoursTime)
   return(
         <div className="pishbini-har-saat">
         <span>

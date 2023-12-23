@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { changeSearchTerm, fetchSearchData ,changeHeader,fetchForcastData} from "../store";
 import { useState } from "react";
-import UseIP from "./hooks/UseIP";
 
 
 
@@ -16,10 +15,10 @@ const [userInput,setUserInput]= useState('');
 
   const searchTerm = useSelector((state) => state.header.searchTerm);
   const locationNames = useSelector((state) => state.header.receivedData);
-  const userLocationName = useSelector((state)=>state.times.presentTime);
-  const Country = userLocationName && userLocationName.location && userLocationName.location.country ; 
-  const LocName = userLocationName && userLocationName.location && userLocationName.location.name ; 
-  const TZID = userLocationName && userLocationName.location && userLocationName.location.tz_id ; 
+  const userLocationData = useSelector((state)=>state.times.presentTime);
+  const Country = userLocationData?.location?.country ; 
+  const LocName = userLocationData?.location?.name ; 
+  const TZID = userLocationData?.location?.tz_id ; 
   
 
 
@@ -53,7 +52,7 @@ const [userInput,setUserInput]= useState('');
             {TZID}
           </h4>
       </div>
-      <div className="search">
+      <div className="search-location">
         <input
           className="search-bar"
           type="search"

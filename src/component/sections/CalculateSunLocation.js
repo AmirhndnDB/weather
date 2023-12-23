@@ -13,7 +13,7 @@ function Cal(){
     const TEyShodeSun = (NOWTime - sunRTMin)
     const dayTimeMinets = (sunRTMax - sunRTMin )
     const PersentTeyShode = (((TEyShodeSun/dayTimeMinets)*212)-15);
-    console.log(localTime)
+    // console.log(localTime)
 }
 
 export default Cal ;

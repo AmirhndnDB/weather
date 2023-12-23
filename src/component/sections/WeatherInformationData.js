@@ -1,4 +1,4 @@
-function WeathersData({title,value,mark}){
+function WeatherInformationData({title,value,mark}){
     return(
     <div>
         <h3 className="value">{value + mark}</h3>
@@ -6,4 +6,4 @@ function WeathersData({title,value,mark}){
     </div>
     );
 }
- export default WeathersData;
+ export default WeatherInformationData;

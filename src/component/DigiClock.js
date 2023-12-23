@@ -57,10 +57,6 @@ const ClockApp = () => {
     return null; // Return null if no number is found in the string
   }
 
-  // Test the function
-  console.log(extractHour('6pm')); // Output: 18
-  console.log(extractHour('8am')); // Output: 8
-  console.log(extractHour('12am')); // Output: 0
 
   const hourFromLocalTime = extractHour(localTime);
 

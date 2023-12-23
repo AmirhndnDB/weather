@@ -5,9 +5,9 @@ import ImageSelector from "./ImageSelector";
 
 function UVIndex(){
 
-    const presentTime = useSelector(state => state.times.presentTime);
-    const UVIndex = presentTime && presentTime.current  && presentTime.current.uv;
-    console.log(UVIndex);
+    const LocationData = useSelector(state => state.times.presentTime);
+    const UVIndex = LocationData?.current?.uv;
+    // console.log(UVIndex);
     function getUVClassName(UVIndex) {
       if (UVIndex === 1) {
         return 'UV1';
@@ -28,7 +28,7 @@ function UVIndex(){
       }
     }
     const ClassName = getUVClassName(UVIndex);
-    console.log(ClassName)
+    // console.log(ClassName)
 
 
 
@@ -48,7 +48,7 @@ function UVIndex(){
             <ImageSelector condition={"Sunny"} CN={"sun-uv "+ ClassName} />
           </div>
         </div>
-        <span className="uv-text">eat watermelon 1 or tow</span>
+        <span className="uv-text">drink 2 litr water in day</span>
             
         </section>
     );
