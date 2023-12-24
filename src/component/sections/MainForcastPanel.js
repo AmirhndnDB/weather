@@ -4,16 +4,13 @@ import { useDispatch,useSelector } from "react-redux";
 import { fetchForcastData ,changeTemperType} from "../../store";
 import { useEffect } from "react";
 import ImageSelector from "./ImageSelector";
-import useLocalTime from "../hooks/UseLocalTime";
 
 
 
 
-function MainForcastPanel(){
+
+function MainForcastPanel({hour}){
     const dispatch = useDispatch();
-    const Hours = useLocalTime();
-
-
 
     const temperType = useSelector(state => state.times.temperType);
     const LocationDatas = useSelector(state => state.times.presentTime);
@@ -37,24 +34,18 @@ function MainForcastPanel(){
 
 
     
-    const conditionText = LocationDatas?.current?.condition?.text ;
-    const LocalTime = LocationDatas?.location?.localtime ; 
-    const CelcTemper = LocationDatas?.current?.temp_c ;
-    const FarenTemper = LocationDatas?.current?.temp_f ;
-    const Humidity = LocationDatas?.current?.humidity ;
-    const WindSpid = LocationDatas?.current?.wind_kph ;
-    const maxTempC = LocationDatas?.forecast?.forecastday[0]?.day?.maxtemp_c;
-    const minTempC = LocationDatas?.forecast?.forecastday[0]?.day?.mintemp_c;
-    const maxTempF = LocationDatas?.forecast?.forecastday[0]?.day?.maxtemp_f;
-    const minTempF = LocationDatas?.forecast?.forecastday[0]?.day?.mintemp_f;
-
-  
-
-       
-    const hours = Hours
-  
-    
-//     console.log(conditionText,LocalTime);
+    const conditionText = LocationDatas?.current?.condition?.text  ||0;
+    const LocalTime = LocationDatas?.location?.localtime ||0; 
+    const CelcTemper = LocationDatas?.current?.temp_c  ||0;
+    const FarenTemper = LocationDatas?.current?.temp_f  ||0;
+    const Humidity = LocationDatas?.current?.humidity  ||0;
+    const WindSpid = LocationDatas?.current?.wind_kph  ||0;
+    const maxTempC = LocationDatas?.forecast?.forecastday[0]?.day?.maxtemp_c ||0;
+    const minTempC = LocationDatas?.forecast?.forecastday[0]?.day?.mintemp_c ||0;
+    const maxTempF = LocationDatas?.forecast?.forecastday[0]?.day?.maxtemp_f ||0;
+    const minTempF = LocationDatas?.forecast?.forecastday[0]?.day?.mintemp_f ||0;
+    const hours = hour
+    console.log(conditionText,LocalTime);
 //     console.log(maxTempC);
 //    console.log(hours)
    let oneH = (hours === 23 ? 0: hours + 1); 
@@ -73,8 +64,8 @@ function MainForcastPanel(){
    
 
 
-    return (
-        <section className="grid-items the-header-weather">
+   return (
+       <section className="grid-items the-header-weather">
             <div className="date-time">
                 {LocalTime}
                 

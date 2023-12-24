@@ -1,22 +1,24 @@
 import { useState, useEffect } from 'react';
 
-const useHourFromTimeString = (timeString) => {
-  const [hours, setHours] = useState(null);
+const useHourFromTimeString = (inputString) => {
+  const [time, setTime] = useState(null);
 
   useEffect(() => {
-    const extractHour = (inputString) => {
-      const date = new Date(inputString);
-      const hours = date.getHours();
-      setHours(hours);
-    };
-
-    if (timeString) {
-      extractHour(timeString);
+    if (inputString) {
+      const timeParts = inputString.split(' ');
+      if (timeParts.length === 2) {
+        const timeValue = timeParts[1]; // Extract the time part
+        const [hours, minutes] = timeValue.split(':').map(Number);
+        const Hours = hours
+        setTime(Hours);
+     }
     }
-  }, [timeString]);
+  }, [inputString]);
 
-  return hours;
+  return time;
 };
+
+
 
 export default useHourFromTimeString;
 

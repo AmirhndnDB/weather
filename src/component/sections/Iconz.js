@@ -29,6 +29,12 @@ function Iconz ({condition}){
         case "clodSun":
             return <BsFillCloudDrizzleFill className="weather-icon"/>
             break    
+        case "Light rain" :
+            return <BsFillCloudHailFill className="weather-icon"/>
+            break
+        case 'Moderate rain' :
+            return <BsFillCloudHailFill className="weather-icon"/>
+            break
         case "Patchy rain possible" :
             return <BsFillCloudHailFill className="weather-icon"/>
             break
