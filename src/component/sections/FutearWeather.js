@@ -1,6 +1,8 @@
 import { useDispatch,useSelector } from "react-redux";
 import { changeForcastPeriodType } from "../../store";
-import FutearDaysPanel from "./FutearDaysPanel";
+import FutearDay from "./FutearDay";
+import FutearWeek from "./FutearWeek";
+import Route from "./Route";
 function FutearWeather(){
 
   const dispatch = useDispatch();
@@ -29,14 +31,12 @@ function FutearWeather(){
               <button className={"btn-design " + (forcastPeriodType === 'weekly' ? "secend-btn" : "not-clicked")}>Weekly Forecast</button>
             </div>
         </div>
-        <div className="days">
-        <FutearDaysPanel  dayNumber={0} futearCast={0} />
-        <FutearDaysPanel  dayNumber={1}futearCast={1} />
-        <FutearDaysPanel  dayNumber={2}futearCast={2} />
-        <FutearDaysPanel  dayNumber={3}futearCast={0} />
-        <FutearDaysPanel  dayNumber={4}futearCast={1} />
-        <FutearDaysPanel  dayNumber={5}futearCast={2} />
-        </div>
+        <Route Type='daly'>
+          <FutearDay/>
+        </Route>
+        <Route Type='weekly'>
+          <FutearWeek/>
+        </Route>
         </section>
     );
 }
