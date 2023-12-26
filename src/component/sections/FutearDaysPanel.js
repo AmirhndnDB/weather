@@ -20,7 +20,7 @@ function FutearDaysPanel({dayNumber,futearCast}){
 
 
 
-  console.log(Condition);
+  // console.log(Condition);
 
   
     return(

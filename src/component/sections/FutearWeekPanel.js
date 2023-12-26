@@ -26,7 +26,7 @@ function FutearWeekPanel({dayNumberFrom,futearCast,dayNumberTill}){
 
 
 
-  console.log(Condition);
+  // console.log(Condition);
 
   
     return(

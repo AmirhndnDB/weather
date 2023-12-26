@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-// import moment from 'moment'; // Import moment.js
 import moment from 'moment/moment';
 const useFutureDate = (numOfDays) => {
   const [futureDate, setFutureDate] = useState(null);

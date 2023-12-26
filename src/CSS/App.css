@@ -393,6 +393,9 @@
 
 
   /* sun-location */
+  .sun-none{
+    display: none;
+  }
   .sun-location {
     display: flex;
     flex-direction: column;

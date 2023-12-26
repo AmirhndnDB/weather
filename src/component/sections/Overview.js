@@ -6,7 +6,7 @@ import { useCalculatedValues } from "./CalculateAvrageData";
 function Overview() {
   const dispatch = useDispatch();
   const datas =  useCalculatedValues();
-  console.log(datas)
+  // console.log(datas)
   const chartDataType = useSelector((state) => state.times.chartDataType);
 
 

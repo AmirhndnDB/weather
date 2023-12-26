@@ -17,7 +17,7 @@ export const useCalculatedValues = () => {
   const SnowFall2 = LocationDatas?.forecast?.forecastday[1]?.day?.daily_will_it_snow || 0;
   const SnowFall3 = LocationDatas?.forecast?.forecastday[2]?.day?.daily_will_it_snow || 0;
 
-  console.log(Rainfall1,Rainfall2,Rainfall3,MaxWind1,MaxWind2,MaxWind3,Humidity1,Humidity2,Humidity3,SnowFall1,SnowFall2,SnowFall3)
+  // console.log(Rainfall1,Rainfall2,Rainfall3,MaxWind1,MaxWind2,MaxWind3,Humidity1,Humidity2,Humidity3,SnowFall1,SnowFall2,SnowFall3)
 
   let randomnumber02 = Math.random() * 2;
 

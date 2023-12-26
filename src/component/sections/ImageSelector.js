@@ -23,8 +23,8 @@ function ImageSelector({CN,condition,X,Y}){
     const sunStyle = {
         left:`${X}%`,
         bottom:`${Y}%`
-
     }
+
 
 
     switch(condition){

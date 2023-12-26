@@ -45,7 +45,7 @@ function MainForcastPanel({hour}){
     const maxTempF = LocationDatas?.forecast?.forecastday[0]?.day?.maxtemp_f ||0;
     const minTempF = LocationDatas?.forecast?.forecastday[0]?.day?.mintemp_f ||0;
     const hours = hour
-    console.log(conditionText,LocalTime);
+    // console.log(conditionText,LocalTime);
 //     console.log(maxTempC);
 //    console.log(hours)
    let oneH = (hours === 23 ? 0: hours + 1); 
