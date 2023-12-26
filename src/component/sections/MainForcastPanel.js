@@ -1,8 +1,6 @@
- import FutearHoursWeather from "./FutearsHoursWeather";
+import FutearHoursWeather from "./FutearsHoursWeather";
 import WeatherInformationData from "./WeatherInformationData";
 import { useDispatch,useSelector } from "react-redux";
-import { fetchForcastData ,changeTemperType} from "../../store";
-import { useEffect } from "react";
 import ImageSelector from "./ImageSelector";
 
 
@@ -15,25 +13,6 @@ function MainForcastPanel({hour}){
     const temperType = useSelector(state => state.times.temperType);
     const LocationDatas = useSelector(state => state.times.presentTime);
 
-
-    const {isLoading,error} = useSelector((state)=>{
-        return state.times
-    })
-    useEffect(()=> {
-      dispatch(fetchForcastData());
-    },[dispatch]);
-
-    if (isLoading){
-        return <div>isLoading</div>
-    }
-
-    if(error){
-        return <div> Error  fetching data . . . . .</div>
-    }
-
-
-
-    
     const conditionText = LocationDatas?.current?.condition?.text  ||0;
     const LocalTime = LocationDatas?.location?.localtime ||0; 
     const CelcTemper = LocationDatas?.current?.temp_c  ||0;

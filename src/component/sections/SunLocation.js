@@ -1,14 +1,15 @@
 import ImageSelector from "./ImageSelector";
-import { useSelector } from "react-redux";
+import { useSelector} from "react-redux";
 import CalculateSunLoc from "./CalculateSunLocation";
 
 function SunLocation(){
-const LocationData = useSelector(state => state.times.presentTime);
-const sunrise = LocationData?.forecast?.forecastday[0]?.astro?.sunrise;
-const sunset =LocationData?.forecast?.forecastday[0]?.astro?.sunset;
-const LocalTime = LocationData?.location?.localtime ; 
+  const LocationData = useSelector(state => state.times.presentTime);
+  const sunrise = LocationData?.forecast?.forecastday[0]?.astro?.sunrise;
+  const sunset =LocationData?.forecast?.forecastday[0]?.astro?.sunset;
+  const LocalTime = LocationData?.location?.localtime ; 
+  const {X,Y,delta} = CalculateSunLoc(sunrise,sunset,LocalTime)
 
-const {X,Y,delta} = CalculateSunLoc(sunrise,sunset,LocalTime)
+
 
 console.log(X,Y,delta)
 
