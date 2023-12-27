@@ -1,16 +1,20 @@
 import "./CSS/App.css";
-import Header from "./component/Header";
-import Main from "./component/Main";
-import Footer from "./component/Footer";
-import TestComponent from "./component/TestComponent";
+import MainRoute from "./component/MainRoute";
+import NewsPage from "./component/NewsPage";
+import Link from "./component/Link";
+import MainPage from "./MainPage";
 function App(){
     return (
-        <>
-        <Header/>
-        <Main/>
-        <TestComponent/>
-        <Footer/>
-        </>
+    <>
+        <MainRoute path={"/"}>
+            <MainPage/>
+        </MainRoute>
+        <Link to={"/"}>back Hom</Link>
+        <MainRoute path={"/news"}>
+            <NewsPage/>
+        </MainRoute>
+    </>
+        
     );
 }
 
