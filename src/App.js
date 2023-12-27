@@ -9,8 +9,8 @@ function App(){
         <MainRoute path={"/"}>
             <MainPage/>
         </MainRoute>
-        <Link to={"/"}>back Hom</Link>
         <MainRoute path={"/news"}>
+        <Link to={"/"}>back Hom</Link>
             <NewsPage/>
         </MainRoute>
     </>

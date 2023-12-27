@@ -8,7 +8,7 @@ import useHourFromTimeString from "./hooks/useStringToHoursNumber";
 import { useSelector,useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { fetchForcastData } from "../store";
-
+import Skeleton from '@mui/material/Skeleton';
 
 
 
@@ -25,7 +25,12 @@ function Main(){
     },[dispatch]);
     
     if (isLoading){
-        return <div>isLoading.......</div>
+        return <Skeleton
+        sx={{ bgcolor: '#359bff' }}
+        variant="rectangular"
+        width={210}
+        height={118}
+      />
     }
     
     if(error){

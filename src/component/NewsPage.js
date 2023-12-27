@@ -1,6 +1,30 @@
 function NewsPage (){
+    
+    return (
+        <section className="news-page">
 
-    return <p> hello im work</p>
+        <div className="news-page-item-box">
+            <p className="news-page-item-text">
+             hello im work 
+            </p>
+        </div>
+        <div className="news-page-item-box">
+            <p className="news-page-item-text">
+             hello im work 
+            </p>
+        </div>
+        <div className="news-page-item-box">
+            <p className="news-page-item-text">
+             hello im work 
+            </p>
+        </div>
+        <div className="news-page-item-box">
+            <p className="news-page-item-text">
+             hello im work 
+            </p>
+        </div>
+        </section>
+        )
 
 }
 
