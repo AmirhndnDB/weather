@@ -1,0 +1,71 @@
+.overview {
+width: 89%;
+height:95%;
+grid-area: o;
+background-color: #359bff;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+gap: 1rem;
+padding: 2% 8% 2% 3%;
+
+
+  
+  }
+  
+  .overvew-title-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .overvew-title{
+   color: aliceblue;
+   margin: 0;
+   
+  
+  }
+  .forcast-type {
+    background-color: #c2e1ff;
+    display: flex;
+    border-radius: 15rem;
+    padding: 0px;
+  }
+  
+  
+  .overvew-first-btn-box {
+    background-color: aliceblue;
+  }
+  .overvew-first-btn {
+    background-color: aliceblue;
+    color: #359bff;
+  }
+  .overvew-secend-btn-box {
+    background-color: aliceblue;
+  }
+  .overvew-secend-btn{
+    background-color: aliceblue;
+    color: #359bff;
+  }
+  
+  .overvew-third-btn-box{
+    background-color: aliceblue;
+  }
+  .overvew-third-btn{
+      background-color: aliceblue;
+    color: #359bff;
+  }
+  
+  .not-clicked{
+    background-color: #c2e1ff;
+  }
+  
+  .w-96{
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+  }
+  
+  canvas{
+    height: max-content;
+  }

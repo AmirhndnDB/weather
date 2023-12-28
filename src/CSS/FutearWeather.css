@@ -1,0 +1,94 @@
+
+.futer-weather {
+  background-color: #1c86ee;
+  grid-area: f;
+  flex-direction: column;
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+  }
+  .period-forcast-type {
+    background-color: #c2e1ff;
+    display: flex;
+    border-radius: 15rem;
+    padding: 0;
+  }
+  
+
+  
+
+  .first-btn-box {
+    background-color: aliceblue;
+  }
+
+.first-btn {
+  background-color: aliceblue;
+  color: #359bff;
+  }
+
+.secend-btn-box {
+    background-color: aliceblue;
+  }
+
+.secend-btn{
+    background-color: aliceblue;
+    color: #359bff;
+  }
+
+.not-clicked{
+    background-color: #c2e1ff;
+    
+}
+  
+.days{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  gap: 1rem;
+}
+  .day-box {
+    background-color: #359bff;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1.5rem;
+    padding: 5%;
+  }
+
+  .tim-box {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 1.25rem;
+  }
+  .day{
+    font-size: 1.3rem;
+  }
+  .date{
+    font-size: 1rem;
+  }
+  .img {
+    height: 5.25rem;
+    width: 5.25rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: flex-end;
+  }
+  .value-panel {
+      grid-row: 2/3;
+      grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+}
+
+  .v-temp {
+    margin-top: 0;
+  }
+  .title-panel {
+    margin-top: 0;
+  }

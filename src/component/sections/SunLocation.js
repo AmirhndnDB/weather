@@ -16,12 +16,12 @@ console.log(X,Y,delta)
     return (
         <section className="grid-items sun-location">
           <div class="sun-box">
-          <div>sunris</div>
+          <div className="sun-rise">sunris</div>
           <div className="axis-sun">
            <ImageSelector  CN={delta >= 0 ? "sun" : "sun-none"} condition={"Sun"} X={X} Y={Y}/>
             <div className="erth-border-sun"></div>
           </div>
-          <div>sunset</div>
+          <div className="sun-set">sunset</div>
         </div>
         <div className="sun-tims">
           <span className="sun-tims-items sun-tims-item-left">{sunrise}</span>

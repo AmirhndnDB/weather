@@ -1,0 +1,47 @@
+
+.weather-news {
+  grid-area: n;
+  background-color: #359bff;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 1rem;
+  padding: 4%;
+  }
+  .title-box {
+    display: inherit;
+    justify-content: space-between;
+  }
+  .p-t {
+    align-self: center;
+    margin: 0;
+  }
+  .view {
+    align-self: center;
+    text-decoration: none;
+  
+    color: aliceblue;
+  }
+  .news-box {
+    display: inherit;
+    gap: 1rem;
+  }
+  .news-panel {
+    background-image: url(../component/png/vecteezy_vector-illustration-of-weather-condition-forecast-icon-set_22701389.jpg);
+    border-radius: 1rem;
+    padding: 1rem;
+    padding: 4% 2% 4% 2%;
+  }
+  .main-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .loc-name-news {
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+  .text {
+    margin: 0;
+    font-size: x-small;
+  }
+

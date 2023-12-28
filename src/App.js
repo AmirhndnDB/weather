@@ -1,4 +1,5 @@
 import "./CSS/App.css";
+import "./CSS/NewsPage.css";
 import MainRoute from "./component/MainRoute";
 import NewsPage from "./component/NewsPage";
 import Link from "./component/Link";

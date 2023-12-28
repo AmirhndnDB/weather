@@ -1,0 +1,14 @@
+
+.news-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .news-page-item-box{
+    border-radius: 3rem;
+    align-self: center;
+    background-color: #359bff;
+    padding: 15rem;
+  }

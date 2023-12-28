@@ -35,7 +35,7 @@ function UVIndex(){
     return (
         <section className="grid-items uv-index">
         <div className="uv-box">
-          <div>uv index</div>
+          <div className="uv-title">uv index</div>
           <div className="uv-amont">
             <p className="uv-amont-n n1">1</p>
             <p className="uv-amont-n n2">2</p>

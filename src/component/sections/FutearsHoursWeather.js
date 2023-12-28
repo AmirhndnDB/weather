@@ -17,11 +17,11 @@ function FutearHoursWeather ({hoursNumb}){
 // console.log(hoursTime)
   return(
         <div className="pishbini-har-saat">
-        <span>
+        <span className="span">
         {hoursNumb}:00
         </span>
         <Iconz  condition={ConditionText}/>
-        <span>
+        <span className="span">
         {temperType === 'c'
         ? tempC 
         : tempF

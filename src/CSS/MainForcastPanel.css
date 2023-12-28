@@ -1,0 +1,62 @@
+.the-header-weather{
+  grid-area: h;
+  display: flex;
+  background-color: #359bff;
+  color: aliceblue;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+
+}
+.date-time {
+    align-self: start;
+    margin-bottom: -3.1%;
+}
+.data-from-api {
+  display: flex;
+  gap: 1.88rem;
+  align-self: center;
+  margin-left: 1.55%;
+}
+.icon-box {
+  margin-top: 0;
+}
+.weather-icon-image {
+  width: 6.25rem;
+  height: 6.25rem;
+ 
+}
+.kind-of-weather {
+  margin-top: -20%;
+}
+  
+
+.title {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+.pishbini-havaye-aty {
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+}
+  
+  .pishbini-har-saat {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c86ee;
+    padding: 1.2% 0.8% 1.2% 0.8%;
+    border-radius: 1rem;
+  }
+  span {
+    align-self: center;
+    padding: 0.3rem;
+  }
+  .weather-icon {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    align-self: center;
+  }
+  
