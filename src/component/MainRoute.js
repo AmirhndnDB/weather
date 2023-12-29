@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import NavigationContext from "../navigation";
+import NavigationContext from "./navigation";
 
 function MainRoute ({path,children}){
     const {currntPath} = useContext(NavigationContext);

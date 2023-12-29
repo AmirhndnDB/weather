@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
-import ImageSelector from "./ImageSelector";
-import useFutureDate from "../hooks/UseDateAndTime";
+import ImageSelector from "../../store/ImageSelector";import useFutureDate from "../hooks/UseDateAndTime";
 import useFutureDatePelass from "../hooks/UseDateAndTimePelass";
 
 

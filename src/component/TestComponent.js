@@ -1,6 +1,6 @@
 import React from 'react';
 import UseIP from './hooks/UseIP';
-import ClockApp from './DigiClock';
+import ClockApp from '../DigiClock';
 import useTimeToMinutes from './hooks/UsePersentHours';
 import useHourFromTimeString from './hooks/useStringToHoursNumber';
 import { useSelector } from "react-redux";

@@ -1,7 +1,7 @@
 import FutearHoursWeather from "./FutearsHoursWeather";
 import WeatherInformationData from "./WeatherInformationData";
 import { useDispatch,useSelector } from "react-redux";
-import ImageSelector from "./ImageSelector";
+import ImageSelector from "../../store/ImageSelector";
 
 
 

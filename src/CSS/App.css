@@ -60,3 +60,18 @@
   border-radius: 15rem;
   display: flex;
 }
+
+
+.not-clicked{
+  background-color: #c2e1ff;
+  
+}
+.clicked{
+  color: #359bff;
+  background-color: aliceblue;
+}
+.clicked-box{
+  background-color: aliceblue;
+}
+
+

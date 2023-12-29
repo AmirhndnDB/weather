@@ -20,15 +20,15 @@ function FutearWeather(){
     return (
         <section className="grid-items futer-weather" >
         <div className="period-forcast-type">
-            <div className = {"btn-design-box " + (forcastPeriodType === 'daly' ?  'first-btn-box' :' not-clicked' )} 
+            <div className = {"btn-design-box " + (forcastPeriodType === 'daly' ?  'clicked-box' :' not-clicked' )} 
             onClick={()=> handleChangePeriodType('daly')}
             >
-              <button className={"btn-design  " +  (forcastPeriodType  === 'daly' ? 'first-btn' : 'not-clicked')}>Daily Forecast</button>
+              <button className={"btn-design  " +  (forcastPeriodType  === 'daly' ? 'clicked' : 'not-clicked')}>Daily Forecast</button>
             </div>
-            <div className={"btn-design-box " + (forcastPeriodType === 'weekly' ? "secend-btn-box" : "not-clicked")}
+            <div className={"btn-design-box " + (forcastPeriodType === 'weekly' ? "clicked-box" : "not-clicked")}
             onClick={()=> handleChangePeriodType('weekly')}
             >
-              <button className={"btn-design " + (forcastPeriodType === 'weekly' ? "secend-btn" : "not-clicked")}>Weekly Forecast</button>
+              <button className={"btn-design " + (forcastPeriodType === 'weekly' ? "clicked" : "not-clicked")}>Weekly Forecast</button>
             </div>
         </div>
         <Route Type='daly'>

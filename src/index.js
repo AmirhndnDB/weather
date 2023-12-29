@@ -3,7 +3,7 @@ import ReactDom from 'react-dom/client';
 import { Provider } from "react-redux";
 import { store } from "./store";
 import App from "./App";
-import { NavProvider } from "./navigation";
+import { NavProvider } from "./component/navigation";
 
 
 const  el  = document.getElementById("root");

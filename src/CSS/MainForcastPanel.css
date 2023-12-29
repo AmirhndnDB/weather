@@ -28,14 +28,16 @@
 }
 .kind-of-weather {
   margin-top: -20%;
+  font-size: smaller;
 }
   
 
 .title {
-    text-align: center;
-    padding-top: 0;
-    margin-top: 0.3rem;
-    margin-bottom: 0;
+  font-size: medium;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
 }
 .pishbini-havaye-aty {
   display: flex;

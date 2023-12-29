@@ -3,7 +3,7 @@ import "./CSS/NewsPage.css";
 import MainRoute from "./component/MainRoute";
 import NewsPage from "./component/NewsPage";
 import Link from "./component/Link";
-import MainPage from "./MainPage";
+import MainPage from "./component/MainPage";
 function App(){
     return (
     <>

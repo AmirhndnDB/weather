@@ -21,21 +21,21 @@
 }
 
 .search-bar{
-    border-radius: 30px;
-    height: 35px;
-    border: none;
-    outline: none;
+  border-radius: 2rem;
   padding: 5% 10% 5% 10%;
-    background-color: #c5dcf3;
+  height: 2.2rem;
+  border: none;
+  outline: none;
+  background-color: #c5dcf3;
 }
 .search-result{
+  margin-bottom: -1.3rem;
     list-style: none;
     z-index: 5;
     padding: 0;
     display: inherit;
     flex-direction: column;
     align-items: center;
-    margin-bottom: -20px;
   
 }
   
@@ -44,14 +44,14 @@
   cursor: pointer;
 }
 .language-name-box{
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #c5dcf3;
-  height: 35px;
+  height: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 2rem;
 }
 .language-name{
     background-color: #c5dcf3;
@@ -61,46 +61,19 @@
 .temper-type {
   background-color: #c2e1ff;
   display: flex;
-  border-radius: 150px;
+  border-radius: 2rem;
   padding: 0;
 }
 .temper-type-box{
-  background-color: #c2e1ff;
   display: flex;
-  border-radius: 150px;
-  padding: 10px;
+  border-radius: 2rem;
+  padding: 0.666rem;
 
 }
 .temper-type-item {
   padding: 0;
   border: none;
-  background-color: #c2e1ff;
   align-self: center;
-}
-
-.celcios-box{
-  border-radius: 150px;
-  background-color: aliceblue;
-}
-
-.celcios{
-  background-color: aliceblue;
-  color: #359bff;
-
-}
-
-.faren-box{
-  background-color: aliceblue;
-  color: #359bff;
-}
-
-.faren{
-  background-color: aliceblue;
-  color: #359bff;
-}
-.not-clicked{
-  background-color: #c2e1ff;
-
 }
 
 

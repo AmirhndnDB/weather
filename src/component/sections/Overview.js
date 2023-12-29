@@ -2,7 +2,7 @@ import React from "react";
 import { LineChart } from "./LineChart";
 import { useDispatch, useSelector } from "react-redux";
 import { changeChartDataType } from "../../store";
-import { useCalculatedValues } from "./CalculateAvrageData";
+import { useCalculatedValues } from "../../store/CalculateAvrageData";
 function Overview() {
   const dispatch = useDispatch();
   const datas =  useCalculatedValues();
@@ -40,26 +40,26 @@ function Overview() {
         <h3 className="overvew-title">Overview</h3>
         <div className="forcast-type">
           <div
-            className={"btn-design-box " + (chartDataType === "Humdy" ? "overvew-first-btn-box" : "not-clicked")}
+            className={"btn-design-box " + (chartDataType === "Humdy" ? "clicked-box" : "not-clicked")}
             onClick={() => handleChangeChartDataType("Humdy")}
           >
-            <button className={"btn-design " + (chartDataType === "Humdy" ? "overvew-first-btn" : "not-clicked")}>
+            <button className={"btn-design " + (chartDataType === "Humdy" ? "clicked" : "not-clicked")}>
               Humidity
             </button>
           </div>
           <div
-            className={"btn-design-box " + (chartDataType === "rain" ? "overvew-secend-btn-box" : "not-clicked")}
+            className={"btn-design-box " + (chartDataType === "rain" ? "clicked-box" : "not-clicked")}
             onClick={() => handleChangeChartDataType("rain")}
           >
-            <button className={"btn-design " + (chartDataType === "rain" ? "overvew-secend-btn" : "not-clicked")}>
+            <button className={"btn-design " + (chartDataType === "rain" ? "clicked" : "not-clicked")}>
               Rainfall
             </button>
           </div>
           <div
-            className={"btn-design-box " + (chartDataType === "wind" ? "overvew-third-btn-box" : "not-clicked")}
+            className={"btn-design-box " + (chartDataType === "wind" ? "clicked-box" : "not-clicked")}
             onClick={() => handleChangeChartDataType("wind")}
           >
-            <button className={"btn-design " + (chartDataType === "wind" ? "overvew-third-btn" : "not-clicked")}>
+            <button className={"btn-design " + (chartDataType === "wind" ? "clicked" : "not-clicked")}>
               Windspeed
             </button>
           </div>

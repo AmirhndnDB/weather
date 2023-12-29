@@ -30,33 +30,7 @@ padding: 2% 8% 2% 3%;
     padding: 0px;
   }
   
-  
-  .overvew-first-btn-box {
-    background-color: aliceblue;
-  }
-  .overvew-first-btn {
-    background-color: aliceblue;
-    color: #359bff;
-  }
-  .overvew-secend-btn-box {
-    background-color: aliceblue;
-  }
-  .overvew-secend-btn{
-    background-color: aliceblue;
-    color: #359bff;
-  }
-  
-  .overvew-third-btn-box{
-    background-color: aliceblue;
-  }
-  .overvew-third-btn{
-      background-color: aliceblue;
-    color: #359bff;
-  }
-  
-  .not-clicked{
-    background-color: #c2e1ff;
-  }
+
   
   .w-96{
     display: flex;

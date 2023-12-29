@@ -1,4 +1,4 @@
-import Iconz from "./Iconz";
+import Iconz from "../../store/Iconz";
 import { useSelector } from "react-redux";
 
 

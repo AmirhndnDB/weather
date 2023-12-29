@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import NavigationContext from "../navigation";
+import NavigationContext from "./navigation";
 function Link({to,children}){
     const{navigat} =  useContext(NavigationContext);
     const handleClick =(event)=>{

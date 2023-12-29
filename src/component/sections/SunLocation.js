@@ -1,6 +1,5 @@
-import ImageSelector from "./ImageSelector";
-import { useSelector} from "react-redux";
-import CalculateSunLoc from "./CalculateSunLocation";
+import ImageSelector from "../../store/ImageSelector";import { useSelector} from "react-redux";
+import CalculateSunLoc from "../../store/CalculateSunLocation";
 
 function SunLocation(){
   const LocationData = useSelector(state => state.times.presentTime);
@@ -15,7 +14,7 @@ console.log(X,Y,delta)
 
     return (
         <section className="grid-items sun-location">
-          <div class="sun-box">
+          <div className="sun-box">
           <div className="sun-rise">sunris</div>
           <div className="axis-sun">
            <ImageSelector  CN={delta >= 0 ? "sun" : "sun-none"} condition={"Sun"} X={X} Y={Y}/>

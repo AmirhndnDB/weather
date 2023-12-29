@@ -1,5 +1,5 @@
-import useTimeToMinutes from "../hooks/UsePersentHours";
-import useTimeConversion from "../hooks/UseTimeConvertion";
+import useTimeToMinutes from "../component/hooks/UsePersentHours";
+import useTimeConversion from "../component/hooks/UseTimeConvertion";
 
 
 const CalculateSunLoc = (sunrise,sunset,LocalTime) => {

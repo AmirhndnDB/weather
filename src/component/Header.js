@@ -20,16 +20,16 @@ function Header(){
                 </select>
             </div>
             <div className="temper-type">
-                <div className={"temper-type-box " + (temperType === 'c' ? 'celcios-box ': 'not-clicked')}
+                <div className={"temper-type-box " + (temperType === 'c' ? 'clicked-box ': 'not-clicked')}
                 onClick={() => handleChangeTemperType('c')}
                 >
-                    <button className={"temper-type-item " + (temperType === 'c' ? 'celcios' : 'not-clicked')}>C^</button>
+                    <button className={"temper-type-item " + (temperType === 'c' ? 'clicked' : 'not-clicked')}>C^</button>
                     </div>
                     <div
-                    className={"temper-type-box " + (temperType === 'f' ? 'faren-box' : 'not-clicked')}
+                    className={"temper-type-box " + (temperType === 'f' ? 'clicked-box' : 'not-clicked')}
                     onClick={() => handleChangeTemperType('f')}
                     >
-                    <button className={"temper-type-item " + (temperType === 'f' ? 'faren' : 'not-clicked')}>F^</button>
+                    <button className={"temper-type-item " + (temperType === 'f' ? 'clicked' : 'not-clicked')}>F^</button>
                 </div>
             </div>
         </header>
