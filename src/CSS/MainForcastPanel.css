@@ -6,17 +6,22 @@
   flex-direction: column;
   gap: 1rem;
   padding: 1.5rem;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+
 
 }
 .date-time {
     align-self: start;
     margin-bottom: -3.1%;
+    margin-bottom: -1.5rem;
 }
 .data-from-api {
   display: flex;
   gap: 1.88rem;
+  gap:2rem;
   align-self: center;
   margin-left: 1.55%;
+  margin-left: 1rem;
 }
 .icon-box {
   margin-top: 0;
@@ -28,6 +33,7 @@
 }
 .kind-of-weather {
   margin-top: -20%;
+  margin-top: -1rem;
   font-size: smaller;
 }
   
@@ -36,7 +42,7 @@
   font-size: medium;
   text-align: center;
   padding-top: 0;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
   margin-bottom: 0;
 }
 .pishbini-havaye-aty {
@@ -50,11 +56,12 @@
     flex-direction: column;
     background-color: #1c86ee;
     padding: 1.2% 0.8% 1.2% 0.8%;
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
     border-radius: 1rem;
   }
   span {
     align-self: center;
-    padding: 0.3rem;
+    padding: 0.5rem;
   }
   .weather-icon {
     margin-top: 0.25rem;

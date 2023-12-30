@@ -31,12 +31,12 @@ function FutearWeekPanel({dayNumberFrom,futearCast,dayNumberTill}){
     return(
         <div className="day-box">
         <div className="tim-box">
-          <div className="day">
+          <div className="date">
             {futureDate}
           </div>
-          <span className="date">                
+          <div className="date">                
           {futureDatePelass}
-          </span>
+          </div>
         </div>
         <ImageSelector CN={"img"} condition={Condition}/>
         <div className="value-panel">

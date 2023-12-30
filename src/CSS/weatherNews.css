@@ -6,7 +6,9 @@
   flex-direction: column;
   align-self: flex-start;
   gap: 1rem;
-  padding: 4%;
+  padding: 1.5rem;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+
   }
   .title-box {
     display: inherit;
@@ -27,10 +29,10 @@
     gap: 1rem;
   }
   .news-panel {
-    background-image: url(../component/png/vecteezy_vector-illustration-of-weather-condition-forecast-icon-set_22701389.jpg);
+    background-image: url(../store/png/vecteezy_vector-illustration-of-weather-condition-forecast-icon-set_22701389.jpg);
     border-radius: 1rem;
     padding: 1rem;
-    padding: 4% 2% 4% 2%;
+
   }
   .main-title {
     margin-top: 0;
@@ -42,6 +44,6 @@
   }
   .text {
     margin: 0;
-    font-size: x-small;
+    font-size: 0.625rem;
   }
 

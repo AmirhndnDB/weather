@@ -8,6 +8,8 @@ flex-direction: column;
 justify-content: space-evenly;
 gap: 1rem;
 padding: 2% 8% 2% 3%;
+box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+
 
 
   
@@ -15,7 +17,8 @@ padding: 2% 8% 2% 3%;
   
   .overvew-title-box{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 14rem;
   }
   .overvew-title{
    color: aliceblue;
@@ -26,8 +29,8 @@ padding: 2% 8% 2% 3%;
   .forcast-type {
     background-color: #c2e1ff;
     display: flex;
-    border-radius: 15rem;
-    padding: 0px;
+    border-radius: 5rem;
+    padding: 0;
   }
   
 

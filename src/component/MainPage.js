@@ -1,6 +1,5 @@
 import Header from "./Header";
 import Main from "./Main";
-import Footer from "./Footer";
 import TestComponent from "./TestComponent";
 import "../CSS/Header.css";
 import "../CSS/MainForcastPanel.css";
@@ -11,11 +10,11 @@ import "../CSS/UV.css";
 import "../CSS/weatherNews.css";
 
 function MainPage(){
-    return(<>
+    return(
+    <>
     <Header/>
     <Main/>
     <TestComponent/>
-    <Footer/>
     </>
     )
 }

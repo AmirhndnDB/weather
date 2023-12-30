@@ -1,3 +1,69 @@
+/* 
+Instead 1rem=1em =16px  ==>1px =0.0625
+
+-----01 TYPOGRAFY SYSTEM
+
+- FONT SIZ SYSTEM(px)
+10/12/14/16/18/20/24/30/36/44/52/62/74/86/98
+- FONT SIZ SYSTEM(rem)
+0.625/0.75/0.875/1/1.125/1.25/1.5/1.875/2.25/2.75/3.25/3.875/4.625/5.375/6.125
+
+
+
+- Font weights:
+DEFULT: 300
+ Mediom: 400
+ Semi-bold: 600
+ Bold: 700
+
+- Line height:
+Difult: 1
+Small: 1.05
+midium: 1.2
+Paragraf_difalt: 1.6
+
+-letter-spacing 
+-0.5
+0.75px
+
+
+---02 COLORS
+
+PRIMERY:  #3392f0
+- Tins: #c2e1ff
+- shades: #1c86ee 
+- Accent:---
+- greys : aliceblue
+
+
+---- 05 SHADOWS
+
+box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+
+----06 BORDER RADUS
+(rem)
+Difult:  1 / 1.5 / 2 / 5 ;
+(%) 50%
+
+----07 WITESPACE
+
+- SPACING SYSTEM (px)
+2/4/8/12//16//24/32/48/64/80/96/128
+- SPACING SYSTEM (rem)
+0.125/0.25/0.5/1/1.5/2/3/4/5/6/8
+
+*/
+
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+/* html{
+  font-size: 62.5%;
+} */
+
+
 /* main General */
    body {
     background-color: #1c86ee;
@@ -6,16 +72,11 @@
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   
    }
-  h1 {
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-  }
+
   
   .all-contents{
     display: grid;
-    gap: 10px;
+    gap: 0.75rem;
     grid-template-areas:
       "h h h h h U U U S S S"
       "h h h h h U U U S S S"
@@ -27,14 +88,20 @@
       "f f f f f o o o o o o"
       "f f f f f n n n n n n"
       "f f f f f n n n n n n"
-      "f f f f f n n n n n n"
-      "f f f f f n n n n n n"
-      "f f f f f n n n n n n";
+      "f f f f f T T T T T T"
+      "f f f f f T T T T T T"
+      "f f f f f T T T T T T";
+  }
+  .test-component {
+    background-color: #359bff;
+    grid-area: T;
+    display: flex;
+    flex-direction: column;
   }
   .grid-items {
     color: aliceblue;
     display: flex;
-    border-radius: 20px;
+    border-radius: 2rem;
     align-self: center;
   }
 
@@ -57,7 +124,7 @@
 .btn-design-box {
   background-color: #c2e1ff;
   padding: 0.65rem;
-  border-radius: 15rem;
+  border-radius: 5rem;
   display: flex;
 }
 
