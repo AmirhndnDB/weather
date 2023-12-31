@@ -8,8 +8,8 @@ import useHourFromTimeString from "./hooks/useStringToHoursNumber";
 import { useSelector,useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { fetchForcastData } from "../store";
-import Skeleton from '@mui/material/Skeleton';
 import Footer from "./Footer";
+import AllSkeleton from "./sections/AllSkeleton";
 
 
 function Main(){
@@ -25,44 +25,13 @@ function Main(){
     },[dispatch]);
     
     if (isLoading){
-
-        return (
-            <main className="all-contents">
-            <Skeleton   
-            sx={{ bgcolor: '#359bff' }}
-            // height={100}
-            className="grid-items the-header-weather"/>
-            <Skeleton  
-            sx={{ bgcolor: '#359bff' }}
-            // height={100}
-             className="grid-items futer-weather"/>
-            <Skeleton   
-            sx={{ bgcolor: '#359bff' }}
-            // height={100}
-            className="grid-items uv-index"/>
-            <Skeleton  
-            sx={{ bgcolor: '#359bff' }}
-            // height={100}
-             className="grid-items sun-location"/>
-            <Skeleton  
-            sx={{ bgcolor: '#359bff' }}
-            // height={100}
-             className="grid-items overview"/>
-            <Skeleton 
-            sx={{ bgcolor: '#359bff' }}
-            // height={100}
-             className="grid-items weather-news"/>
-        </main>
-      )
+        return <AllSkeleton/>
     }
     
     if(error){
         return <div> Error  fetching data . . . . .</div>
     }
-
-
     return (
-        
         <main className="all-contents">
             <MainForcastPanel hour={hour}/>
             <FutearWeather/>
@@ -71,7 +40,6 @@ function Main(){
             <Overview/>
             <News/>
             <Footer className="test-component grid-items"/>
-
         </main>
     );
 }

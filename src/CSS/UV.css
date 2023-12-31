@@ -26,6 +26,11 @@
     height: 13rem;
     position: relative;
   }
+  .skelet-box{
+    margin-bottom: -5rem;
+
+
+  }
   .uv-amont-n {
     position: absolute;
   }
