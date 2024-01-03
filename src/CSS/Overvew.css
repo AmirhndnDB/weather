@@ -9,6 +9,7 @@ justify-content: space-evenly;
 gap: 1rem;
 padding: 2% 8% 2% 3%;
 box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+box-shadow: 0 1.2rem 0.4rem rgba(0, 0, 0, 0.075);
 
 
 
@@ -17,8 +18,8 @@ box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
   
   .overvew-title-box{
     display: flex;
-    /* justify-content: space-between; */
-    gap: 14rem;
+    justify-content: space-between;
+    /* gap: 11rem; */
   }
   .overvew-title{
    color: aliceblue;

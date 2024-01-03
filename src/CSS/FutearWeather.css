@@ -35,7 +35,7 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem ;
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1.2rem 0.4rem rgba(0, 0, 0, 0.075);
   }
 
   .tim-box {
@@ -66,6 +66,10 @@
     align-self: center;
     margin: 0;
 }
+.Space-fix{
+  margin-top: -3rem;
+}
+
 
   .v-temp {
     margin-top: 0;

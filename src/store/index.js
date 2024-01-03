@@ -7,6 +7,7 @@ import { historyReducer } from "./slices/historySlice";
 import { ipLookupReducer } from "./slices/ipLookup";
 import { realTimeReducer } from "./slices/realTimeSlice";
 import { timeZoneReducer } from "./slices/timeZoneSlice";
+import { NewsReducer } from "./slices/NewsSlice";
 import { fetchSearchData } from './thunks/fetchSearchData';
 import { fetchTimeZone } from "./thunks/fetchTimeZone";
 import { fetchForcastData } from "./thunks/fetchForcastData";
@@ -14,6 +15,7 @@ import { fetchAstronomyData } from "./thunks/fetchAstronomyData";
 import { fetchHistoryWeather } from "./thunks/fetchHistoryWeather";
 import { fetchIPLookup } from "./thunks/fetchIPLookup";
 import { fetchRealtimeWeather } from "./thunks/fetchRealtimeWeather";
+import { fetchNewsData } from "./thunks/NewsThunk";
 import thunkMiddleware from 'redux-thunk';
 
 export const store = configureStore({
@@ -25,6 +27,8 @@ export const store = configureStore({
     ipLookup: ipLookupReducer,
     realTime:realTimeReducer,
     timeZone: timeZoneReducer,
+    News:NewsReducer,
+
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(thunkMiddleware),
@@ -37,6 +41,7 @@ export {
   fetchHistoryWeather,
   fetchForcastData,
   fetchTimeZone,
+  fetchNewsData,
   changeAstromyData,
   changeSearchTerm,
   changeHeader,

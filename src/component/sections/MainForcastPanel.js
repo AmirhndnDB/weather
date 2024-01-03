@@ -1,6 +1,6 @@
 import FutearHoursWeather from "./FutearsHoursWeather";
 import WeatherInformationData from "./WeatherInformationData";
-import { useDispatch,useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import ImageSelector from "../../store/ImageSelector";
 
 
@@ -8,7 +8,6 @@ import ImageSelector from "../../store/ImageSelector";
 
 
 function MainForcastPanel({hour}){
-    const dispatch = useDispatch();
 
     const temperType = useSelector(state => state.times.temperType);
     const LocationDatas = useSelector(state => state.times.presentTime);

@@ -114,6 +114,12 @@ Difult:  1 / 1.5 / 2 / 5 ;
     margin-top: 0.65rem;
     text-align: center;
 }
+.information-box{
+  margin-top: -1rem;
+}
+.Space-fix{
+  margin-top: -3rem;
+}
 
 .btn-design {
   background-color: #c2e1ff;

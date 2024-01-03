@@ -13,142 +13,151 @@ function AllSkeleton(){
   <div className="data-from-api">
     <div className="icon-box">
       <Skeleton className="weather-icon-image"
+        sx={{ marginTop:-2 }}
         width={100}
         height={100}
       />
-      <Skeleton className="kind-of-weather"
+      <Skeleton className="kind-of-weather fix-space-skeleton"
         width={100}
-        height={20}
+        height={6}
+        sx={{ marginTop:-2 }}
+
       />      
     </div>
-    <div>
+    <div className="information-box">
       <Skeleton className="value"
         width={80}
         height={100}
       />
       <Skeleton className="title"
         width={100}
-        height={30}
+        height={20}
+        sx={{ marginTop:-2 }}
+
       />
     </div>
-    <div>
+    <div className="information-box">
       <Skeleton className="value"
         width={80}
         height={100}
       />
       <Skeleton className="title"
         width={100}
-        height={30}
+        height={20}
+        sx={{ marginTop:-2 }}
+
       />
     </div>
-    <div>
+    <div className="information-box">
       <Skeleton className="value"
         width={100}
         height={100}
       />
       <Skeleton className="title"
         width={100}
-        height={30}
+        height={20}
+        sx={{ marginTop:-2 }}
+
       />
     </div>
   </div>
   <div className="pishbini-havaye-aty">
     <div className="pishbini-har-saat">
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
       <Skeleton 
         width={15}
-        height={20}
+        height={15}
         />
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
       <Skeleton 
         width={15}
-        height={20}
+        height={15}
         />
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
       <Skeleton 
         width={15}
-        height={20}
+        height={15}
         />
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
       <Skeleton 
         width={15}
-        height={20}
+        height={15}
         />
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
       <Skeleton 
         width={15}
-        height={20}
+        height={15}
         />
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
       <Skeleton 
         width={15}
-        height={20}
+        height={15}
         />
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
       <Skeleton 
         width={15}
-        height={20}
+        height={15}
         />
       <Skeleton className="span"
-        width={45}
-        height={20}
+        width={47}
+        height={15}
       />
     </div>
   </div>
@@ -172,20 +181,23 @@ function AllSkeleton(){
         <Skeleton className="date"
           width={100}
           height={20}
+          sx={{ marginTop:-1.25 }}
         />
       </div>
       <Skeleton className="img"
         width={100}
         height={100}
        />
-      <div className="value-panel">
+      <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
           width={70}
           height={70}
         />
-        <Skeleton className="title-panel"
+        <Skeleton className="title-panel "
           width={80}
           height={10}
+          sx={{ marginTop:-2 }}
+
         />
       </div>
     </div>
@@ -198,13 +210,14 @@ function AllSkeleton(){
         <Skeleton className="date"
           width={100}
           height={20}
+          sx={{ marginTop:-1.25 }}
         />
       </div>
       <Skeleton className="img"
         width={100}
         height={100}
        />
-      <div className="value-panel">
+      <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
           width={70}
           height={70}
@@ -212,6 +225,8 @@ function AllSkeleton(){
         <Skeleton className="title-panel"
           width={80}
           height={10}
+          sx={{ marginTop:-2 }}
+
         />
       </div>
     </div>
@@ -224,13 +239,14 @@ function AllSkeleton(){
         <Skeleton className="date"
           width={100}
           height={20}
+          sx={{ marginTop:-1.25 }}
         />
       </div>
       <Skeleton className="img"
         width={100}
         height={100}
        />
-      <div className="value-panel">
+      <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
           width={70}
           height={70}
@@ -238,6 +254,8 @@ function AllSkeleton(){
         <Skeleton className="title-panel"
           width={80}
           height={10}
+          sx={{ marginTop:-2 }}
+
         />
       </div>
     </div>
@@ -250,13 +268,15 @@ function AllSkeleton(){
         <Skeleton className="date"
           width={100}
           height={20}
+          sx={{ marginTop:-1.25 }}
+
         />
       </div>
       <Skeleton className="img"
         width={100}
         height={100}
        />
-      <div className="value-panel">
+      <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
           width={70}
           height={70}
@@ -264,6 +284,8 @@ function AllSkeleton(){
         <Skeleton className="title-panel"
           width={80}
           height={10}
+          sx={{ marginTop:-2 }}
+
         />
       </div>
     </div>
@@ -276,13 +298,15 @@ function AllSkeleton(){
         <Skeleton className="date"
           width={100}
           height={20}
+          sx={{ marginTop:-1.25 }}
+
         />
       </div>
       <Skeleton className="img"
         width={100}
         height={100}
        />
-      <div className="value-panel">
+      <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
           width={70}
           height={70}
@@ -290,6 +314,8 @@ function AllSkeleton(){
         <Skeleton className="title-panel"
           width={80}
           height={10}
+          sx={{ marginTop:-2 }}
+
         />
       </div>
     </div>
@@ -302,13 +328,15 @@ function AllSkeleton(){
         <Skeleton className="date"
           width={100}
           height={20}
+          sx={{ marginTop:-1.25 }}
+
         />
       </div>
       <Skeleton className="img"
         width={100}
         height={100}
        />
-      <div className="value-panel">
+      <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
           width={70}
           height={70}
@@ -316,6 +344,8 @@ function AllSkeleton(){
         <Skeleton className="title-panel"
           width={80}
           height={10}
+          sx={{ marginTop:-2 }}
+
         />
       </div>
     </div>
