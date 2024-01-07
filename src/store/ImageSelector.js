@@ -49,6 +49,9 @@ function ImageSelector({CN,condition,X,Y}){
         case "Light drizzle":
             return <img src={Rainy} alt="ax" className={CN}/>
             break    
+        case "Moderate or heavy rain with thunde":
+            return <img src={TunderStorm} alt="ax" className={CN}/>
+            break  
         case "Light rain":
             return <img src={Rainy} alt="ax" className={CN}/>
             break        

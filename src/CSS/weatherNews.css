@@ -1,5 +1,68 @@
+/* 
+Instead 1rem=1em =16px  ==>1px =0.0625
 
+-----01 TYPOGRAFY SYSTEM
+
+- FONT SIZ SYSTEM(px)
+10/12/14/16/18/20/24/30/36/44/52/62/74/86/98
+- FONT SIZ SYSTEM(rem)
+0.625/0.75/0.875/1/1.125/1.25/1.5/1.875/2.25/2.75/3.25/3.875/4.625/5.375/6.125
+
+
+
+- Font weights:
+DEFULT: 300
+ Mediom: 400
+ Semi-bold: 600
+ Bold: 700
+
+- Line height:
+Difult: 1
+Small: 1.05
+midium: 1.2
+Paragraf_difalt: 1.6
+
+-letter-spacing 
+-0.5
+0.75px
+
+
+---02 COLORS
+
+PRIMERY:  #3392f0
+- Tins: #c2e1ff
+- shades: #1c86ee 
+- Accent:---
+- greys : aliceblue
+
+
+---- 05 SHADOWS
+
+box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+
+----06 BORDER RADUS
+(rem)
+Difult:  1 / 1.5 / 2 / 5 ;
+(%) 50%
+
+----07 WITESPACE
+
+- SPACING SYSTEM (px)
+2/4/8/12//16//24/32/48/64/80/96/128
+- SPACING SYSTEM (rem)
+0.125/0.25/0.5/1/1.5/2/3/4/5/6/8
+
+*/
+
+/* *{
+  padding: 0;
+  margin: 0;
+} */
+/* html{
+  font-size: 62.5%;
+} */
 .weather-news {
+  width: 31rem;
   grid-area: n;
   background-color: #359bff;
   display: flex;
@@ -30,18 +93,22 @@
     gap: 1rem;
   }
   .news-panel {
-    background-image: url(../store/png/vecteezy_vector-illustration-of-weather-condition-forecast-icon-set_22701389.jpg);
+    background-image: url(https://static01.nyt.com/images/2024/01/04/multimedia/04israel-hamas-briefing-header-jgmh/04israel-hamas-briefing-header-jgmh-articleLarge.jpg?quality=75&auto=webp&disable=upscale);
     border-radius: 1rem;
     padding: 1rem;
+    width: 5rem;
+    height: 12rem;
 
   }
   .main-title {
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-size: 1.125rem;
   }
   .loc-name-news {
     margin: 0;
     margin-bottom: 0.25rem;
+    font-size: 0.875rem;
   }
   .text {
     margin: 0;

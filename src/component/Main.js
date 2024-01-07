@@ -7,7 +7,7 @@ import News from "./sections/News";
 import useHourFromTimeString from "./hooks/useStringToHoursNumber";
 import { useSelector,useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { fetchForcastData } from "../store";
+import { fetchForcastData ,fetchNewsData } from "../store";
 import Footer from "./Footer";
 import AllSkeleton from "./sections/AllSkeleton";
 
@@ -22,6 +22,9 @@ function Main(){
     })
     useEffect(()=> {
       dispatch(fetchForcastData());
+    },[dispatch]);
+    useEffect(()=> {
+        dispatch(fetchNewsData());
     },[dispatch]);
     
     if (isLoading){
@@ -39,7 +42,7 @@ function Main(){
             <SunLocation/>
             <Overview/>
             <News/>
-            <Footer className="test-component grid-items"/>
+            <Footer className="Footer grid-items"/>
         </main>
     );
 }

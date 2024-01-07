@@ -3,11 +3,11 @@ function AllSkeleton(){
 
     return(
   <main className="all-contents">
-<section className="grid-items the-header-weather">
+<section className="grid-items the-header-weather the-header-weather-skelet">
   <div className="date-time">
     <Skeleton
-    width={100}
-    height={20}
+    width={130}
+    height={30}
     />
   </div>
   <div className="data-from-api">
@@ -19,14 +19,14 @@ function AllSkeleton(){
       />
       <Skeleton className="kind-of-weather fix-space-skeleton"
         width={100}
-        height={6}
+        height={20}
         sx={{ marginTop:-2 }}
 
       />      
     </div>
-    <div className="information-box">
+    <div className="information-box value-box" >
       <Skeleton className="value"
-        width={80}
+        width={110}
         height={100}
       />
       <Skeleton className="title"
@@ -36,21 +36,21 @@ function AllSkeleton(){
 
       />
     </div>
-    <div className="information-box">
+    <div className="information-box value-box">
       <Skeleton className="value"
-        width={80}
+        width={110}
         height={100}
       />
       <Skeleton className="title"
-        width={100}
+        width={110}
         height={20}
         sx={{ marginTop:-2 }}
 
       />
     </div>
-    <div className="information-box">
+    <div className="information-box value-box">
       <Skeleton className="value"
-        width={100}
+        width={130}
         height={100}
       />
       <Skeleton className="title"
@@ -65,103 +65,126 @@ function AllSkeleton(){
     <div className="pishbini-har-saat">
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
       <Skeleton 
-        width={15}
-        height={15}
+        width={25}
+        height={26}
         />
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
       <Skeleton 
-        width={15}
-        height={15}
+        width={25}
+        height={26}
         />
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
       <Skeleton 
-        width={15}
-        height={15}
+        width={25}
+        height={26}
         />
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
       <Skeleton 
-        width={15}
-        height={15}
+        width={25}
+        height={26}
         />
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
       <Skeleton 
-        width={15}
-        height={15}
+        width={25}
+        height={26}
         />
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
       <Skeleton 
-        width={15}
-        height={15}
+        width={25}
+        height={26}
         />
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
     </div>
     <div className="pishbini-har-saat">
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
       <Skeleton 
-        width={15}
-        height={15}
+        width={25}
+        height={26}
         />
       <Skeleton className="span"
         width={47}
-        height={15}
+        height={26}
       />
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section className="grid-items futer-weather">
   <div className="period-forcast-type">
     <div className = "btn-design-box clicked-box">
@@ -176,26 +199,26 @@ function AllSkeleton(){
       <div className="tim-box">
         <Skeleton className="day"
           width={100}
-          height={20}
+          height={30}
         />
         <Skeleton className="date"
           width={100}
-          height={20}
-          sx={{ marginTop:-1.25 }}
+          height={26}
+          sx={{ marginTop:-0.875 }}
         />
       </div>
       <Skeleton className="img"
         width={100}
-        height={100}
+        height={120}
        />
       <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
-          width={70}
-          height={70}
+          width={100}
+          height={100}
         />
         <Skeleton className="title-panel "
-          width={80}
-          height={10}
+          width={100}
+          height={20}
           sx={{ marginTop:-2 }}
 
         />
@@ -205,26 +228,26 @@ function AllSkeleton(){
       <div className="tim-box">
         <Skeleton className="day"
           width={100}
-          height={20}
+          height={30}
         />
         <Skeleton className="date"
           width={100}
-          height={20}
-          sx={{ marginTop:-1.25 }}
+          height={26}
+          sx={{ marginTop:-0.875 }}
         />
       </div>
       <Skeleton className="img"
         width={100}
-        height={100}
+        height={120}
        />
       <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
-          width={70}
-          height={70}
+          width={100}
+          height={100}
         />
         <Skeleton className="title-panel"
-          width={80}
-          height={10}
+          width={100}
+          height={20}
           sx={{ marginTop:-2 }}
 
         />
@@ -234,26 +257,26 @@ function AllSkeleton(){
       <div className="tim-box">
         <Skeleton className="day"
           width={100}
-          height={20}
+          height={30}
         />
         <Skeleton className="date"
           width={100}
-          height={20}
-          sx={{ marginTop:-1.25 }}
+          height={26}
+          sx={{ marginTop:-0.875 }}
         />
       </div>
       <Skeleton className="img"
         width={100}
-        height={100}
+        height={120}
        />
       <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
-          width={70}
-          height={70}
+          width={100}
+          height={100}
         />
         <Skeleton className="title-panel"
-          width={80}
-          height={10}
+          width={100}
+          height={20}
           sx={{ marginTop:-2 }}
 
         />
@@ -263,27 +286,27 @@ function AllSkeleton(){
       <div className="tim-box">
         <Skeleton className="day"
           width={100}
-          height={20}
+          height={30}
         />
         <Skeleton className="date"
           width={100}
-          height={20}
-          sx={{ marginTop:-1.25 }}
+          height={26}
+          sx={{ marginTop:-0.875 }}
 
         />
       </div>
       <Skeleton className="img"
         width={100}
-        height={100}
+        height={120}
        />
       <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
-          width={70}
-          height={70}
+          width={100}
+          height={100}
         />
         <Skeleton className="title-panel"
-          width={80}
-          height={10}
+          width={100}
+          height={20}
           sx={{ marginTop:-2 }}
 
         />
@@ -293,27 +316,27 @@ function AllSkeleton(){
       <div className="tim-box">
         <Skeleton className="day"
           width={100}
-          height={20}
+          height={30}
         />
         <Skeleton className="date"
           width={100}
-          height={20}
-          sx={{ marginTop:-1.25 }}
+          height={26}
+          sx={{ marginTop:-0.875 }}
 
         />
       </div>
       <Skeleton className="img"
         width={100}
-        height={100}
+        height={120}
        />
       <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
-          width={70}
-          height={70}
+          width={100}
+          height={100}
         />
         <Skeleton className="title-panel"
-          width={80}
-          height={10}
+          width={100}
+          height={20}
           sx={{ marginTop:-2 }}
 
         />
@@ -323,27 +346,27 @@ function AllSkeleton(){
       <div className="tim-box">
         <Skeleton className="day"
           width={100}
-          height={20}
+          height={30}
         />
         <Skeleton className="date"
           width={100}
-          height={20}
-          sx={{ marginTop:-1.25 }}
+          height={26}
+          sx={{ marginTop:-0.875 }}
 
         />
       </div>
       <Skeleton className="img"
         width={100}
-        height={100}
+        height={120}
        />
       <div className="value-panel Space-fix">
         <Skeleton className="value v-temp"
-          width={70}
-          height={70}
+          width={100}
+          height={100}
         />
         <Skeleton className="title-panel"
-          width={80}
-          height={10}
+          width={100}
+          height={20}
           sx={{ marginTop:-2 }}
 
         />
@@ -355,6 +378,13 @@ function AllSkeleton(){
   <div className="uv-box">
     <div className="uv-title">uv index</div>
     <div className="uv-amont skelet-box">
+    <p className="uv-amont-n n1">1</p>
+              <p className="uv-amont-n n2">2</p>
+              <p className="uv-amont-n n3">3</p>
+              <p className="uv-amont-n n4">4</p>
+              <p className="uv-amont-n n5">5</p>
+              <p className="uv-amont-n n6">6</p>
+              <p className="uv-amont-n n7">7</p>
       <div className="erth-border-uv"></div>
     </div>
   </div>
@@ -362,6 +392,7 @@ function AllSkeleton(){
     <Skeleton className="uv-text "
       width={120}
       height={30}
+      sx={{ marginTop:-2 }}
     />
   </div>    
 </section>
@@ -377,10 +408,14 @@ function AllSkeleton(){
     <Skeleton className="sun-tims-items sun-tims-item-left"
       width={60}
       height={30}
+      sx={{ marginTop:-2 }}
+
     />
     <Skeleton className="sun-tims-items sun-tims-item-right" 
       width={60}
       height={30}
+      sx={{ marginTop:-2 }}
+
     />
   </div>
 </section>
@@ -407,7 +442,7 @@ function AllSkeleton(){
   </div>
   <Skeleton 
     width={500}
-    height={350}
+    height={220}
   />
 </section>
 
@@ -421,69 +456,69 @@ function AllSkeleton(){
   <div className="news-box">
     <div className="news-panel">
       <Skeleton className="main-title"
-        width={64}
-        height={10}
+        width={80}
+        height={60}
         sx={{ bgcolor: '#2a2a2a' }}
       />
       <Skeleton className="loc-name-news"
-        width={38}
-        height={5}
+        width={40}
+        height={20}
         sx={{ bgcolor: '#2a2a2a' }}
       />
       <Skeleton className="text"
         width={80}
-        height={15}
+        height={120}
         sx={{ bgcolor: '#2a2a2a' }}
       />
     </div>
     <div className="news-panel">
       <Skeleton className="main-title"
-        width={64}
-        height={10}
+        width={80}
+        height={60}
         sx={{ bgcolor: '#2a2a2a' }}
       />
       <Skeleton className="loc-name-news"
-        width={38}
-        height={5}
+        width={40}
+        height={20}
         sx={{ bgcolor: '#2a2a2a' }}
       />
       <Skeleton className="text"
         width={80}
-        height={15}
+        height={120}
         sx={{ bgcolor: '#2a2a2a' }}
       />
     </div>
     <div className="news-panel">
       <Skeleton className="main-title"
-        width={64}
-        height={10}
+        width={80}
+        height={60}
         sx={{ bgcolor: '#2a2a2a' }}
       />
       <Skeleton className="loc-name-news"
-        width={38}
-        height={5}
+        width={40}
+        height={20}
         sx={{ bgcolor: '#2a2a2a' }}
       />
       <Skeleton className="text"
         width={80}
-        height={15}
+        height={120}
         sx={{ bgcolor: '#2a2a2a' }}
       />
     </div>
     <div className="news-panel">
       <Skeleton className="main-title"
-        width={64}
-        height={10}
+        width={80}
+        height={60}
         sx={{ bgcolor: '#2a2a2a' }}
       />
       <Skeleton className="loc-name-news"
-        width={38}
-        height={5}
+        width={40}
+        height={20}
         sx={{ bgcolor: '#2a2a2a' }}
       />
       <Skeleton className="text"
         width={80}
-        height={15}
+        height={120}
         sx={{ bgcolor: '#2a2a2a' }}
       />
     </div>

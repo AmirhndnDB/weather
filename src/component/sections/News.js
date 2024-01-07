@@ -8,10 +8,10 @@ function News(){
             <Link to={"/news"} className="view">view All</Link>
           </div>
           <div className="news-box">
-            <NewsItemsPanel/>
-            <NewsItemsPanel/>
-            <NewsItemsPanel/>
-            <NewsItemsPanel/>
+            <NewsItemsPanel newsNumb={0}/>
+            <NewsItemsPanel newsNumb={1}/>
+            <NewsItemsPanel newsNumb={2}/>
+            <NewsItemsPanel newsNumb={3}/>
           </div>
         </section>
     );

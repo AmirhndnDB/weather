@@ -2,15 +2,63 @@
 .news-page{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
     text-align: center;
+    justify-items: center;
+    gap: 1rem;
+    margin: 1rem;
   }
   
   .news-page-item-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     border-radius: 2rem;
     align-self: center;
-    background-color: #359bff;
-    padding: 8rem;
+    background-image: url(https://static01.nyt.com/images/2024/01/04/multimedia/04israel-hamas-briefing-header-jgmh/04israel-hamas-briefing-header-jgmh-articleLarge.jpg?quality=75&auto=webp&disable=upscale);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: #008;
+    background-blend-mode:hard-light ;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    height: 25rem;
+    width: 32.5rem;
     box-shadow: 0 1.2rem 0.4rem rgba(0, 0, 0, 0.075);
 
   }
+  .news-page-item-box-Skeleton{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 2rem;
+    align-self: center;
+    background-color: #359bff;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    height: 25rem;
+    width: 32.5rem;
+    box-shadow: 0 1.2rem 0.4rem rgba(0, 0, 0, 0.075);
+
+  }
+
+.News-link{
+  color: aliceblue;
+}
+.news-title-page{
+  align-self: center;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  height: 10rem;
+  width: 34rem;
+}
+
+
+.news-page-item-text{
+  height: 10rem;
+  width: 32rem;
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+}

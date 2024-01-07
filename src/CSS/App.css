@@ -57,7 +57,6 @@ Difult:  1 / 1.5 / 2 / 5 ;
 /* *{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 } */
 /* html{
   font-size: 62.5%;
@@ -70,6 +69,7 @@ Difult:  1 / 1.5 / 2 / 5 ;
     color: aliceblue;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 1rem;
   
    }
 
@@ -88,16 +88,11 @@ Difult:  1 / 1.5 / 2 / 5 ;
       "f f f f f o o o o o o"
       "f f f f f n n n n n n"
       "f f f f f n n n n n n"
-      "f f f f f T T T T T T"
-      "f f f f f T T T T T T"
-      "f f f f f T T T T T T";
+      "f f f f f F F F F F F"
+      "f f f f f F F F F F F"
+      "f f f f f F F F F F F";
   }
-  .test-component {
-    background-color: #359bff;
-    grid-area: T;
-    display: flex;
-    flex-direction: column;
-  }
+
   .grid-items {
     color: aliceblue;
     display: flex;
@@ -106,7 +101,8 @@ Difult:  1 / 1.5 / 2 / 5 ;
   }
 
   .value {
-    font-size: 3rem;
+    width: 8.5rem;
+    font-size: 2.75rem;
     font-weight: 300;
     font-style: normal;
     padding-bottom: 0;
@@ -148,3 +144,13 @@ Difult:  1 / 1.5 / 2 / 5 ;
 }
 
 
+.Test-component{
+  display: none;
+}
+.Footer {
+  background-color: #359bff;
+  grid-area: T;
+}
+footer{
+  display: none;
+}

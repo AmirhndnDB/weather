@@ -1,10 +1,11 @@
 .uv-index {
+    width: 12.5rem;
     background-color: #359bff;
     grid-area: U;
     display: flex;
     flex-direction: column;
-    padding:1rem 0.5rem 1rem 0.5rem ;
-    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+    padding: 0.5rem 1rem;
+    padding-top: 1rem;
     box-shadow: 0 0.6rem 0.4rem rgba(0, 0, 0, 0.075);
 
   
@@ -22,7 +23,7 @@
     border-top: 5px solid #e9dc79;
     border-radius: 50%;
     padding: 0;
-    margin-bottom: -3rem;
+    margin-bottom: -3.5rem;
     width: 70%;
     height: 13rem;
     position: relative;
@@ -38,30 +39,44 @@
   .n1 {
     left: 7%;
     bottom: 48.5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .n2 {
     left: 14.2%;
     bottom: 64%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .n3 {
     left: 28.55%;
     bottom: 75.5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .n4 {
     left:47.2%;
     bottom: 80%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .n5 {
     left: 65.85%;
     bottom: 75.5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .n6 {
     left: 80.2%;
     bottom: 64%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .n7 {
     left: 87.4%;
     bottom: 48.5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   .erth-border-uv {

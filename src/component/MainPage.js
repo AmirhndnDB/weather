@@ -14,7 +14,7 @@ function MainPage(){
     <>
     <Header/>
     <Main/>
-    <TestComponent/>
+    <TestComponent />
     </>
     )
 }
