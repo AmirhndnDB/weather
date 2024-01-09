@@ -27,6 +27,7 @@ box-shadow: 0 1.2rem 0.4rem rgba(0, 0, 0, 0.075);
   
   }
   .forcast-type {
+    cursor: pointer;
     background-color: #c2e1ff;
     display: flex;
     border-radius: 5rem;

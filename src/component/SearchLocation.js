@@ -55,7 +55,7 @@ function SearchLocation() {
             {TZID}
           </h4>
       </div>
-      <div>
+      <div className="search-location-box">
         <div className="search-location">
           <input
             className="search-bar"

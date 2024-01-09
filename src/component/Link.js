@@ -6,7 +6,7 @@ function Link({to,children}){
         event.preventDefault();
         navigat(to)
     };
-    return <a onClick={handleClick}>{children}</a>
+    return <a className="LINK" onClick={handleClick}>{children}</a>
 
 }
 

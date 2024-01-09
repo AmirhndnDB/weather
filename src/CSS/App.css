@@ -121,9 +121,11 @@ Difult:  1 / 1.5 / 2 / 5 ;
   background-color: #c2e1ff;
   border: none;
   align-self: center;
+  cursor: pointer;
 
 }
 .btn-design-box {
+  cursor: pointer;
   background-color: #c2e1ff;
   padding: 0.65rem;
   border-radius: 5rem;
@@ -133,14 +135,21 @@ Difult:  1 / 1.5 / 2 / 5 ;
 
 .not-clicked{
   background-color: #c2e1ff;
+  cursor: pointer;
   
 }
 .clicked{
   color: #359bff;
   background-color: aliceblue;
+  cursor: auto;
 }
 .clicked-box{
   background-color: aliceblue;
+  cursor:auto
+}
+
+.LINK{
+  cursor: pointer;
 }
 
 

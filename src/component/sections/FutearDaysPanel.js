@@ -20,7 +20,7 @@ function FutearDaysPanel({dayNumber,futearCast}){
 
 
 
-  // console.log(Condition);
+  console.log(Condition);
 
   
     return(
@@ -38,7 +38,8 @@ function FutearDaysPanel({dayNumber,futearCast}){
           <h3 className="value v-temp">
            {temperType === 'c'
             ? avTempC
-            : avTempF}^
+            : avTempF
+            }^
           </h3>
           <p className="title-panel">temperetor</p>
         </div>

@@ -12,7 +12,7 @@ function MainForcastPanel({hour}){
     const temperType = useSelector(state => state.times.temperType);
     const LocationDatas = useSelector(state => state.times.presentTime);
 
-    const conditionText = LocationDatas?.current?.condition?.text  ||0;
+    const conditionText = LocationDatas?.current?.condition?.text  ||null;
     const LocalTime = LocationDatas?.location?.localtime ||0; 
     const CelcTemper = LocationDatas?.current?.temp_c  ||0;
     const FarenTemper = LocationDatas?.current?.temp_f  ||0;
@@ -23,9 +23,7 @@ function MainForcastPanel({hour}){
     const maxTempF = LocationDatas?.forecast?.forecastday[0]?.day?.maxtemp_f ||0;
     const minTempF = LocationDatas?.forecast?.forecastday[0]?.day?.mintemp_f ||0;
     const hours = hour
-    // console.log(conditionText,LocalTime);
-//     console.log(maxTempC);
-//    console.log(hours)
+    console.log(conditionText,LocalTime);
    let oneH = (hours === 23 ? 0: hours + 1); 
    let towH = (oneH === 23 ? 0 : oneH + 1) ;
    let threH = (towH === 23 ? 0 : towH + 1); 

@@ -8,10 +8,6 @@ function SunLocation(){
   const LocalTime = LocationData?.location?.localtime ; 
   const {X,Y,delta} = CalculateSunLoc(sunrise,sunset,LocalTime)
 
-
-
-console.log(X,Y,delta)
-
     return (
         <section className="grid-items sun-location">
           <div className="sun-box">

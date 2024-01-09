@@ -15,10 +15,14 @@
     margin-block-start: 1.33em;
     margin-block-end: 1.33em;
 }
+.search-location-box{
+  width: 30rem;
+}
 
 .search-location{
   display: inherit;
 }
+
 
 .search-bar{
   border-radius: 2rem;
@@ -32,17 +36,22 @@
 .search-result{
   list-style: none;
   padding: 0;
-  display: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
 }
   
 .search-result-item{
-  z-index: 6;
   cursor: pointer;
+  background-color:  rgba(16, 90, 226, 0.644);
+  padding: 0.125rem 3rem;
+  border-radius: 2rem;
 }
 .result-box{
   height: 4rem;
   margin-bottom: -5rem;
-  width: 20rem;
+  width: max-content;
 }
 .language-name-box{
   padding-left: 1rem;
@@ -54,10 +63,13 @@
   align-items: center;
   border-radius: 2rem;
   width: 3rem;
+  cursor: pointer;
+
 }
 .language-name{
     background-color: #c5dcf3;
     border: none;
+    cursor: pointer;
 }
 
 .temper-type {
