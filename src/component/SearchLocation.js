@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { changeSearchTerm, fetchSearchData ,changeHeader,fetchForcastData} from "../store";
-import { useState } from "react";
+import { changeSearchTerm, fetchSearchData ,changeHeader,fetchForcastData,clierRecivedData} from "../store";
 
 
 
@@ -9,7 +8,6 @@ import { useState } from "react";
 
 function SearchLocation() {
 
-const [userInput,setUserInput]= useState('');
 
   const dispatch = useDispatch();
 
@@ -31,6 +29,9 @@ const [userInput,setUserInput]= useState('');
     if(value.length > 2 ){
       dispatch(fetchSearchData(value));
     }
+    if(value.length < 1){
+      dispatch(clierRecivedData(value))
+    }
     
   };
 
@@ -38,6 +39,8 @@ const [userInput,setUserInput]= useState('');
     const itemValue = e.target.innerText;
     dispatch(changeHeader(itemValue))
     dispatch(fetchForcastData(itemValue))
+    dispatch(clierRecivedData(itemValue))
+    dispatch(changeSearchTerm(''))
   }
 
   return (
@@ -52,26 +55,32 @@ const [userInput,setUserInput]= useState('');
             {TZID}
           </h4>
       </div>
-      <div className="search-location">
-        <input
-          className="search-bar"
-          type="search"
-          value={searchTerm}
-          onChange={handleSearchTermChange}
-          />
-        <ul className="search-result">
-          {locationNames.slice(0, 3).map((locationName)=>(
-            <li className="search-result-item"
-            key={locationName.id}
-            onClick={handleChangeHeader}
-            >
-              {locationName.name}
-            </li>
-            ))}
-        </ul>
+      <div>
+        <div className="search-location">
+          <input
+            className="search-bar"
+            type="search"
+            value={searchTerm}
+            onChange={handleSearchTermChange}
+            />
+        </div>
+        <div className="result-box">
+          <ul className="search-result">
+            {locationNames.slice(0, 3).map((locationName)=>(
+              <li
+              className="search-result-item"
+              key={locationName.id}
+              onClick={handleChangeHeader}
+              >
+                {locationName.name}
+              </li>
+              ))}
+          </ul>
+        </div>
       </div>
     </>
   );
 }
 
 export default SearchLocation;
+

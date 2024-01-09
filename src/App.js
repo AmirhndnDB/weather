@@ -4,8 +4,8 @@ import MainRoute from "./component/MainRoute";
 import NewsPage from "./component/NewsPage";
 import Link from "./component/Link";
 import MainPage from "./component/MainPage";
-import AllSkeleton from "./component/sections/AllSkeleton";
-import Header from "./component/Header";
+// import AllSkeleton from "./component/sections/AllSkeleton";
+// import Header from "./component/Header";
 function App(){
     return (
     <>
@@ -13,9 +13,8 @@ function App(){
             <MainPage/>
         </MainRoute>
         <MainRoute path={"/news"}>
-            {/* <Link to={"/"}>back Hom</Link> */}
-            <Header/>
-            <AllSkeleton/>
+            <Link to={"/"}>back Hom</Link>
+            <NewsPage/>
         </MainRoute>
     </>
         

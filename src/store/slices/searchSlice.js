@@ -16,8 +16,12 @@ const searchSlice = createSlice({
     changeSearchTerm(state, action) {
       state.searchTerm = action.payload;
     },
+    
     changeHeader (state, action){
       state.header =  action.payload;
+    },
+    clierRecivedData(state) {
+      state.receivedData = [];
     },
   },
   extraReducers: (builder) => {
@@ -36,5 +40,5 @@ const searchSlice = createSlice({
   },
 });
 
-export const {changeSearchTerm, changeHeader } = searchSlice.actions;
+export const {changeSearchTerm, changeHeader ,clierRecivedData} = searchSlice.actions;
 export const headerReducer = searchSlice.reducer;

@@ -1,4 +1,5 @@
 .uv-index {
+  z-index: -1;
     width: 12.5rem;
     background-color: #359bff;
     grid-area: U;
