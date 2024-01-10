@@ -82,12 +82,7 @@ Difult:  1 / 1.5 / 2 / 5 ;
     align-self: center;
     margin: 0;
   }
-  .view {
-    align-self: center;
-    text-decoration: none;
-  
-    color: aliceblue;
-  }
+
   .news-box {
     display: inherit;
     gap: 1rem;

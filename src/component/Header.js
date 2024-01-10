@@ -13,24 +13,24 @@ function Header(){
     return (
         <header className="header">
             <SearchLocation className="search-location"/>
-            <div className="language-name-box">
-                <select className="language-name"  name="job" id="job">
-                     <option >ENG</option>
-                     <option>Fr</option>
-                </select>
-            </div>
+            <select className="language-name-box"  name="job" id="job">
+                <option >ENG</option>
+                <option>Fr</option>
+            </select>
+ 
             <div className="temper-type">
-                <div className={"temper-type-box " + (temperType === 'c' ? 'clicked-box ': 'not-clicked')}
+                <button 
+                className={"temper-type-box " + (temperType === 'c' ? 'clicked-box ': 'not-clicked')}
                 onClick={() => handleChangeTemperType('c')}
                 >
-                    <button className={"temper-type-item " + (temperType === 'c' ? 'clicked' : 'not-clicked')}>C^</button>
-                    </div>
-                    <div
-                    className={"temper-type-box " + (temperType === 'f' ? 'clicked-box' : 'not-clicked')}
-                    onClick={() => handleChangeTemperType('f')}
-                    >
-                    <button className={"temper-type-item " + (temperType === 'f' ? 'clicked' : 'not-clicked')}>F^</button>
-                </div>
+                    C^
+                </button>
+                <button
+                className={"temper-type-box " + (temperType === 'f' ? 'clicked-box' : 'not-clicked')}
+                onClick={() => handleChangeTemperType('f')}
+                >
+                    F^
+                </button>
             </div>
         </header>
         );

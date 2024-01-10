@@ -54,16 +54,16 @@ Difult:  1 / 1.5 / 2 / 5 ;
 
 */
 
-/* *{
-  padding: 0;
-  margin: 0;
-} */
 /* html{
   font-size: 62.5%;
 } */
 
 
 /* main General */
+*{
+  padding: 0;
+  margin: 0;
+}
    body {
     background-color: #1c86ee;
     color: aliceblue;
@@ -117,39 +117,52 @@ Difult:  1 / 1.5 / 2 / 5 ;
   margin-top: -3rem;
 }
 
-.btn-design {
-  background-color: #c2e1ff;
-  border: none;
-  align-self: center;
-  cursor: pointer;
-
-}
 .btn-design-box {
-  cursor: pointer;
-  background-color: #c2e1ff;
-  padding: 0.65rem;
   border-radius: 5rem;
   display: flex;
-}
-
-
-.not-clicked{
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
   background-color: #c2e1ff;
-  cursor: pointer;
-  
+  transition: all 1s;
+
 }
-.clicked{
-  color: #359bff;
-  background-color: aliceblue;
-  cursor: auto;
+
+
+.btn-design-box:hover{
+ color: #359bff;
+  transition: all 1s;
 }
+
+
 .clicked-box{
   background-color: aliceblue;
-  cursor:auto
+  color: #359bff;
+  cursor:default;
+}
+.not-clicked{
+  background-color: #c2e1ff;
+  color: black;
+  cursor: pointer;
+  
 }
 
 .LINK{
   cursor: pointer;
+  padding: 0.5rem ;
+  transition: all 1s;
+  border-radius: 5rem;
+
+
+
+  
+}
+.LINK:hover{
+  background-color: aliceblue;
+  color: #1c86ee;
+  transition: all 1s;
+  border-radius: 5rem;
+
 }
 
 
