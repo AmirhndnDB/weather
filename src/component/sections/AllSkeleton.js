@@ -162,37 +162,14 @@ function AllSkeleton(){
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section className="grid-items futer-weather">
   <div className="period-forcast-type">
-    <div className = "btn-design-box clicked-box">
-      <button className="btn-design clicked" >Daily Forecast</button>
-    </div>
-    <div className="btn-design-box ">
-      <button className="btn-design ">Weekly Forecast</button>
-    </div>
+    < button className = "btn-design-box clicked-box">
+      Daily Forecast
+    </ button>
+    < button className="btn-design-box not-clicked">
+      Weekly Forecast
+    </ button>
   </div>
   <div className="days">
     <div className="day-box">
@@ -424,19 +401,13 @@ function AllSkeleton(){
     <h3 className="overvew-title">Overview</h3>
     <div className="forcast-type">
       <div className="btn-design-box clicked-box">
-        <button className="btn-design clicked">
-            Humidity
-        </button>
+        Humidity
       </div>
-      <div className="btn-design-box ">
-        <button className="btn-design">
-          Rainfall
-        </button>
+      <div className="btn-design-box not-clicked">
+        Rainfall
       </div>
-      <div className="btn-design-box ">
-        <button className="btn-design">
-            Windspeed
-        </button>
+      <div className="btn-design-box not-clicked">
+        Windspeed
       </div>
     </div>
   </div>
@@ -533,17 +504,6 @@ export default AllSkeleton;
 
 
 
-// <Skeleton
-// sx={{ bgcolor: '#359bff' }}
-// variant="rectangular"
-// width={210}
-// height={118}
-// />
 
-
-
-
-<>
-</>
 
 

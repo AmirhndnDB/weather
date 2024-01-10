@@ -48,10 +48,13 @@
   background-color:  rgba(16, 90, 226, 0.644);
   padding: 0.125rem 3rem;
   border-radius: 2rem;
+  transition: all 0.5s;
+
 }
 .search-result-item:hover{
   background-color: aliceblue;
   color: #359bff;
+  transition: all 0.5s;
 }
 .result-box{
   height: 4rem;
