@@ -14,6 +14,7 @@
     color: aliceblue;
     margin-block-start: 1.33em;
     margin-block-end: 1.33em;
+    font-weight: 400;
 }
 .search-location-box{
   width: 30rem;

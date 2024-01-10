@@ -81,6 +81,8 @@ Difult:  1 / 1.5 / 2 / 5 ;
   .p-t {
     align-self: center;
     margin: 0;
+    font-weight: 300;
+    font-size: 1.5rem;
   }
 
   .news-box {
@@ -99,14 +101,17 @@ Difult:  1 / 1.5 / 2 / 5 ;
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 1.125rem;
+    font-weight: 400;
   }
   .loc-name-news {
     margin: 0;
     margin-bottom: 0.25rem;
     font-size: 0.875rem;
+    font-weight: 400;
   }
   .text {
     margin: 0;
     font-size: 0.625rem;
+    font-weight: 200;
   }
 

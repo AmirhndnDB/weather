@@ -52,9 +52,11 @@
   }
   .day{
     font-size: 1.25rem;
+    font-weight: 400;
   }
   .date{
     font-size: 1rem;
+    font-weight: 300;
   }
   .img {
     height: 6.25rem;
@@ -86,4 +88,5 @@
   }
   .title-panel {
     margin-top: 0;
+    font-weight: 400;
   }
