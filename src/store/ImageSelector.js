@@ -43,6 +43,12 @@ function ImageSelector({CN,condition,X,Y}){
         case "snowy":
             return <img src={Snowy} alt="ax" className={CN}/>
             break
+        case "Light snow":
+            return <img src={Snowy} alt="ax" className={CN}/>
+            break    
+        case "Light freezing rain":
+            return <img src={Snowy} alt="ax" className={CN}/>
+            break        
         case "Cloudy":
             return <img src={CloudyRanbow} alt="ax" className={CN}/>
             break
