@@ -22,9 +22,7 @@ function Main(){
     })
     useEffect(()=> {
       dispatch(fetchForcastData());
-    },[dispatch]);
-    useEffect(()=> {
-        dispatch(fetchNewsData());
+      dispatch(fetchNewsData());
     },[dispatch]);
     
     if (isLoading){

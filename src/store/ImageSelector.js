@@ -26,7 +26,7 @@ function ImageSelector({CN,condition,X,Y}){
     }
 
     
-
+    
     switch(condition){
         case "Sunny"  :
             return <img src={SunImg} alt="ax" className={CN}/>
@@ -42,6 +42,9 @@ function ImageSelector({CN,condition,X,Y}){
             break
         case "snowy":
             return <img src={Snowy} alt="ax" className={CN}/>
+            break
+        case "Cloudy":
+            return <img src={CloudyRanbow} alt="ax" className={CN}/>
             break
         case "Patchy moderate snow":
             return <img src={Snowy} alt="ax" className={CN}/>
