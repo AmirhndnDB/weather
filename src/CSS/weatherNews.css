@@ -62,7 +62,8 @@ Difult:  1 / 1.5 / 2 / 5 ;
   font-size: 62.5%;
 } */
 .weather-news {
-  width: 31rem;
+  width: 37rem;
+  height: 20rem;
   grid-area: n;
   background-color: #359bff;
   display: flex;
@@ -93,7 +94,7 @@ Difult:  1 / 1.5 / 2 / 5 ;
     background-image: url(https://static01.nyt.com/images/2024/01/04/multimedia/04israel-hamas-briefing-header-jgmh/04israel-hamas-briefing-header-jgmh-articleLarge.jpg?quality=75&auto=webp&disable=upscale);
     border-radius: 1rem;
     padding: 1rem;
-    width: 5rem;
+    width: 7rem;
     height: 12rem;
 
   }

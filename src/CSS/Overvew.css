@@ -1,5 +1,6 @@
 .overview {
-width: 31rem;
+width: 37rem;
+height: 22rem;
 grid-area: o;
 background-color: #359bff;
 display: flex;

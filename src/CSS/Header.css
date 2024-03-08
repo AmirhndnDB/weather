@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    height: 4rem;
+    max-width: 82rem;
+    height: 6rem;
     z-index: 50;
 }
 .location-names{
@@ -28,7 +29,7 @@
 .search-bar{
   border-radius: 2rem;
   padding: 0 2rem;
-  height: 2.2rem;
+  height: 3rem;
   width: 11rem;
   border: none;
   outline: none;
@@ -66,7 +67,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #c5dcf3;
-  height: 2.2rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,16 +87,18 @@
 .temper-type {
   background-color: #c2e1ff;
   display: flex;
-  border-radius: 2rem;
+  border-radius: 5rem;
   padding: 0;
   transition: all 1s;
-
+  height: 3rem;
+  
 }
 .temper-type-box{
-  border-radius: 2rem;
+  border-radius: 5rem;
   padding: 0.666rem;
   border: none;
   transition: all 1s;
+  width: 3rem;
 
 }
 

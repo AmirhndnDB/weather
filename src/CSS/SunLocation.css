@@ -1,5 +1,6 @@
 .sun-location {
-  width: 16.5rem;
+  width: 17.5rem;
+  height: 10rem;
   background-color: #359bff;
   grid-area: S;
   display: flex;
@@ -16,7 +17,7 @@
   justify-content: center;
 }
 .sun-rise{
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight:200 ;
 
 }
@@ -51,7 +52,9 @@
     top: 50%;
   }
   .sun-set{
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight:200 ;
+
   }
   
   .sun {

@@ -88,6 +88,8 @@ function ImageSelector({CN,condition,X,Y}){
         case 'Moderate rain' :
             return <img src={Rainy} alt="ax" className={CN}/>
             break
+        default :
+        return    <img src={RainyNight} alt="ax" className={CN}/>
 
 
 

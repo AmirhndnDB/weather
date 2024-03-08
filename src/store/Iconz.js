@@ -10,6 +10,7 @@ import {
     BsFillCloudSleetFill,
     BsFillMoonStarsFill,
     BsFillMoonFill,
+    BsCloudUploadFill,
     
     } from "react-icons/bs";
 function Iconz ({condition}){
@@ -72,6 +73,8 @@ function Iconz ({condition}){
         case "Clear" : 
             return <BsFillMoonFill className="weather-icon"/>
             break
+        default :
+            return   <BsCloudUploadFill className="weather-icon"/>
 
             
             

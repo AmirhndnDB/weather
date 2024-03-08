@@ -11,7 +11,7 @@ function SunLocation(){
     return (
         <section className="grid-items sun-location">
           <div className="sun-box">
-            <div className="sun-rise">sunris</div>
+            <div className="sun-rise">sunrise</div>
             <div className="axis-sun">
               <ImageSelector  CN={delta >= 0 ? "sun" : "sun-none" ||'defult-sun'} condition={"Sun"} X={X} Y={Y}/>
               <div className="erth-border-sun"></div>

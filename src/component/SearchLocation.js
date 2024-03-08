@@ -40,7 +40,6 @@ function SearchLocation() {
     dispatch(changeHeader(itemValue))
     dispatch(fetchForcastData(itemValue))
     dispatch(clierRecivedData(itemValue))
-    dispatch(changeSearchTerm(''))
   }
 
   return (
