@@ -1,17 +1,25 @@
+import FutearDaysPanel from "./FutearDaysPanel";
+function FutearDay() {
+  const forcastDays = [
+    { dayNumber: 1, futearCast: 0 },
+    { dayNumber: 2, futearCast: 1 },
+    { dayNumber: 3, futearCast: 2 },
+    { dayNumber: 4, futearCast: 1 },
+    { dayNumber: 5, futearCast: 2 },
+    { dayNumber: 6, futearCast: 0 },
+  ];
 
-import FutearDaysPanel from "./FutearDaysPanel"
-function FutearDay(){
-
-    return( 
+  return (
     <div className="days">
-        <FutearDaysPanel  dayNumber={1} futearCast={0} />
-        <FutearDaysPanel  dayNumber={2}futearCast={1} />
-        <FutearDaysPanel  dayNumber={3}futearCast={2} />
-        <FutearDaysPanel  dayNumber={4}futearCast={1} />
-        <FutearDaysPanel  dayNumber={5}futearCast={2} />
-        <FutearDaysPanel  dayNumber={6}futearCast={0} />
+      {forcastDays.map(({ dayNumber, futearCast }) => (
+        <FutearDaysPanel
+          key={dayNumber}
+          dayNumber={dayNumber}
+          futearCast={futearCast}
+        />
+      ))}
     </div>
-    )
+  );
 }
 
-export default FutearDay ;
+export default FutearDay;

@@ -5,7 +5,7 @@ grid-area: o;
 background-color: #359bff;
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: space-between;
 gap: 1rem;
 padding: 1.5rem;
 box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);

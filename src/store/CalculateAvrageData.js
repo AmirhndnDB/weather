@@ -4,18 +4,21 @@ import { useSelector } from 'react-redux';
 export const useCalculatedValues = () => {
   const LocationDatas = useSelector(state => state.times.presentTime);
 
-  const MaxWind1 = LocationDatas?.forecast?.forecastday[0]?.day?.maxwind_kph || 0;
-  const MaxWind2 = LocationDatas?.forecast?.forecastday[1]?.day?.maxwind_kph || 0;
-  const MaxWind3 = LocationDatas?.forecast?.forecastday[2]?.day?.maxwind_kph || 0;
-  const Humidity3 = LocationDatas?.forecast?.forecastday[2]?.day?.avghumidity || 0;
-  const Humidity2 = LocationDatas?.forecast?.forecastday[1]?.day?.avghumidity || 0;
-  const Humidity1 = LocationDatas?.forecast?.forecastday[0]?.day?.avghumidity || 0;
-  const Rainfall1 = LocationDatas?.forecast?.forecastday[0]?.day?.daily_will_it_rain || 0;
-  const Rainfall2 = LocationDatas?.forecast?.forecastday[1]?.day?.daily_will_it_rain || 0;
-  const Rainfall3 = LocationDatas?.forecast?.forecastday[2]?.day?.daily_will_it_rain || 0;
-  const SnowFall1 = LocationDatas?.forecast?.forecastday[0]?.day?.daily_will_it_snow || 0;
-  const SnowFall2 = LocationDatas?.forecast?.forecastday[1]?.day?.daily_will_it_snow || 0;
-  const SnowFall3 = LocationDatas?.forecast?.forecastday[2]?.day?.daily_will_it_snow || 0;
+  const forecastDays =LocationDatas?.forecast?.forecastday;
+  if(!forecastDays||forecastDays.length <3)return[]
+
+  const MaxWind1 =forecastDays[0]?.day?.maxwind_kph || 0;
+  const MaxWind2 =forecastDays[1]?.day?.maxwind_kph || 0;
+  const MaxWind3 =forecastDays[2]?.day?.maxwind_kph || 0;
+  const Humidity3 =forecastDays[2]?.day?.avghumidity || 0;
+  const Humidity2 =forecastDays[1]?.day?.avghumidity || 0;
+  const Humidity1 =forecastDays[0]?.day?.avghumidity || 0;
+  const Rainfall1 =forecastDays[0]?.day?.daily_will_it_rain || 0;
+  const Rainfall2 =forecastDays[1]?.day?.daily_will_it_rain || 0;
+  const Rainfall3 =forecastDays[2]?.day?.daily_will_it_rain || 0;
+  const SnowFall1 =forecastDays[0]?.day?.daily_will_it_snow || 0;
+  const SnowFall2 =forecastDays[1]?.day?.daily_will_it_snow || 0;
+  const SnowFall3 =forecastDays[2]?.day?.daily_will_it_snow || 0;
 
   // console.log(Rainfall1,Rainfall2,Rainfall3,MaxWind1,MaxWind2,MaxWind3,Humidity1,Humidity2,Humidity3,SnowFall1,SnowFall2,SnowFall3)
 

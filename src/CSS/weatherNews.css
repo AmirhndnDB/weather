@@ -85,7 +85,12 @@ Difult:  1 / 1.5 / 2 / 5 ;
     font-weight: 300;
     font-size: 1.5rem;
   }
-
+.view{
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    color: aliceblue;
+    text-decoration: none;
+}
   .news-box {
     display: inherit;
     gap: 1rem;

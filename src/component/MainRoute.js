@@ -1,17 +1,14 @@
 import { useContext } from "react";
 import NavigationContext from "./navigation";
 
-function MainRoute ({path,children}){
-    const {currntPath} = useContext(NavigationContext);
+function MainRoute({ path, children }) {
+  const { currentPath } = useContext(NavigationContext);
 
-    if(path === currntPath){
-        return children ;
+  if (path === currentPath) {
+    return children;
+  }
 
-    }
-
-    return null
-
+  return null;
 }
-
 
 export default MainRoute;

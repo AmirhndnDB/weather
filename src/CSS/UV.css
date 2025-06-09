@@ -1,152 +1,158 @@
 .uv-index {
   z-index: -1;
-    width: 17.5rem;
-    height: 10rem;
-    background-color: #359bff;
-    grid-area: U;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem 1rem;
-    padding-top: 1rem;
-    box-shadow: 0 0.6rem 0.4rem rgba(0, 0, 0, 0.075);
+  width: 17.5rem;
+  height: 10rem;
+  background-color: #359bff;
+  grid-area: U;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  box-shadow: 0 0.6rem 0.4rem rgba(0, 0, 0, 0.075);
+}
+.uv-box {
+  display: flex;
+  justify-content: center;
+}
+.uv-title {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+.uv-amont {
+  border-top: 5px solid #e9dc79;
+  border-radius: 50%;
+  padding: 0;
+  margin-bottom: -3.5rem;
+  width: 70%;
+  height: 13rem;
+  position: relative;
+}
+.skelet-box {
+  margin-bottom: -5rem;
+}
+.uv-amont-n {
+  position: absolute;
+}
+.n1 {
+  color: #f4f1ec;
+  left: 7%;
+  bottom: 48.5%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.n2 {
+  color: #f3e2c6;
 
-  
-  
-  }
-  .uv-box {
-    display: flex;
-    justify-content: center;
-  }
-  .uv-title{
-    font-size: 1.25rem;
-    font-weight: 200;
+  left: 14.2%;
+  bottom: 64%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.n3 {
+  color: #edc990;
 
-  }
-  .uv-amont {
-    border-top: 5px solid #e9dc79;
-    border-radius: 50%;
-    padding: 0;
-    margin-bottom: -3.5rem;
-    width: 70%;
-    height: 13rem;
-    position: relative;
-  }
-  .skelet-box{
-    margin-bottom: -5rem;
+  left: 28.55%;
+  bottom: 75.5%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.n4 {
+  color: #f3bd67;
 
+  left: 47.2%;
+  bottom: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.n5 {
+  color: #efab3f;
 
-  }
-  .uv-amont-n {
-    position: absolute;
-  }
-  .n1 {
-    left: 7%;
-    bottom: 48.5%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .n2 {
-    left: 14.2%;
-    bottom: 64%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .n3 {
-    left: 28.55%;
-    bottom: 75.5%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .n4 {
-    left:47.2%;
-    bottom: 80%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .n5 {
-    left: 65.85%;
-    bottom: 75.5%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .n6 {
-    left: 80.2%;
-    bottom: 64%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .n7 {
-    left: 87.4%;
-    bottom: 48.5%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
+  left: 65.85%;
+  bottom: 75.5%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.n6 {
+  color: #f69905;
 
-  .erth-border-uv {
-    border: solid #c2e1ff 1px;
-    width: 110%;
-    position: relative;
-    right: 7.5%;
-    top: 50%;
-  }
-  
-  
-  .sun-uv {
-    width: 2rem;
-    height: 2rem;
-    z-index: 5;
-    position: absolute;
-    /*   left: 40%; */
-    /* left:89%; */
-  }
-  
+  left: 80.2%;
+  bottom: 64%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.n7 {
+  color: #fb5d02;
 
-  .defult-sun-uv{
-    bottom: 45%;
-    left: -11%;
-  }
-  
-  
-  .UV1 {
-    bottom: 53%;
-    left: -10.5%;
-  }
-  .UV2 {
-    bottom: 70%;
-    left: -3.5%;
-  }
-  .UV3 {
-    bottom: 90%;
-    left: 19%;
-  }
-  .UV4 {
-    bottom: 94%;
-    left: 40%;
-  }
-  .UV5 {
-    bottom: 90%;
-    left: 61%;
-  }
-  .UV6 {
-    bottom: 70%;
-    left: 83.5%;
-  }
-  .UV7 {
-    bottom: 53%;
-    left: 90.5%;
-  }
-  
-  
+  left: 87.4%;
+  bottom: 48.5%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.erth-border-uv {
+  border: solid #c2e1ff 1px;
+  width: 110%;
+  position: relative;
+  right: 7.5%;
+  top: 50%;
+}
+
+.sun-uv {
+  width: 2rem;
+  height: 2rem;
+  z-index: 5;
+  position: absolute;
+  /*   left: 40%; */
+  /* left:89%; */
+}
+
+.defult-sun-uv {
+  bottom: 45%;
+  left: -11%;
+}
+
+.UV1 {
+  bottom: 53%;
+  left: -10.5%;
+}
+.UV2 {
+  bottom: 70%;
+  left: -3.5%;
+}
+.UV3 {
+  bottom: 90%;
+  left: 19%;
+}
+.UV4 {
+  bottom: 94%;
+  left: 40%;
+}
+.UV5 {
+  bottom: 90%;
+  left: 61%;
+}
+.UV6 {
+  bottom: 70%;
+  left: 83.5%;
+}
+.UV7 {
+  bottom: 53%;
+  left: 90.5%;
+}
+
+.max-sun-uv {
+  bottom: 42%;
+  left: 91%;
+}
 .uv-text-box {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
-  
-  .uv-text {
-    margin-top: -3rem;
-    padding: 0;
-    font-size: 1rem;
-    font-weight:200 ;
-    margin-left: 2rem;
-  }
-  
+
+.uv-text {
+  margin-top: -3rem;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-left: 2rem;
+}

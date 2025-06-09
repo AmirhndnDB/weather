@@ -1,4 +1,3 @@
-import React from "react";
 import { LineChart } from "./LineChart";
 import { useDispatch, useSelector } from "react-redux";
 import { changeChartDataType } from "../../store";
@@ -6,7 +5,6 @@ import { useCalculatedValues } from "../../store/CalculateAvrageData";
 function Overview() {
   const dispatch = useDispatch();
   const datas =  useCalculatedValues();
-  // console.log(datas)
   const chartDataType = useSelector((state) => state.times.chartDataType);
 
 
@@ -14,25 +12,30 @@ function Overview() {
     dispatch(changeChartDataType(chartDataType));
   };
 
-  const userData =({
+
+
+  const userData ={
     labels: datas.map((data) => data.month),
     datasets: [
       {
         label: chartDataType,
         data: datas.map((data) => {
-          if (chartDataType === "Humdy") {
-            return data.Humdy;
-          } else if (chartDataType === "rain") {
-            return data.rain;
-          } else if(chartDataType === "wind"){
-            return data.wind;
+          switch(chartDataType){
+            case  "Humdy":
+              return data.Humdy;
+            case "rain" :
+              return data.rain;
+            case "wind":
+              return data.wind;
+            default:
+              return 0     
           }
         }),
-        backgroundColor: "aliceblue",
+       backgroundColor: "aliceblue",
         height: "100%",
       },
     ],
-  });
+  };
 
   return (
     <section className="grid-items overview">

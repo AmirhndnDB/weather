@@ -1,6 +1,4 @@
-
-
-.the-header-weather{
+.the-header-weather {
   grid-area: h;
   z-index: -1;
   display: flex;
@@ -13,7 +11,7 @@
   width: 40rem;
   height: 23rem;
 }
-.the-header-weather-skelet{
+.the-header-weather-skelet {
   gap: 2.6rem;
 }
 
@@ -25,19 +23,18 @@
 }
 .data-from-api {
   display: flex;
-  gap:1rem;
+  gap: 1rem;
   align-self: center;
   width: 39rem;
   margin-left: -1rem;
 }
 .icon-box {
   margin-top: 0;
-  width:9rem;
+  width: 9rem;
 }
 .weather-icon-image {
   width: 7rem;
   height: 7rem;
- 
 }
 .kind-of-weather {
   display: block;
@@ -48,8 +45,8 @@
   font-weight: 300;
   width: 8rem;
 }
-  
-.value-box{
+
+.value-box {
   width: 8rem;
 }
 .title {
@@ -65,26 +62,28 @@
   gap: 1rem;
   justify-content: center;
 }
-  
-  .pishbini-har-saat {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    background-color: #1c86ee;
-    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
-    border-radius: 1rem;
-    width: 4.5rem;
-    height: 7rem;
-  }
-  span {
-    align-self: center;
-    font-size: 1.125rem;
-    font-weight: 400;
-  }
-  .weather-icon {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    align-self: center;
-  }
-  
+.pishbini-havaye-aty-skeleton {
+  margin-top: 3.1rem;
+}
+
+.pishbini-har-saat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #1c86ee;
+  padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+  border-radius: 1rem;
+  width: 4.5rem;
+  height: 7rem;
+}
+span {
+  align-self: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.weather-icon {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  align-self: center;
+}

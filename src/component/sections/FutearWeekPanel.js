@@ -1,55 +1,41 @@
 import { useSelector } from "react-redux";
-import ImageSelector from "../../store/ImageSelector";import useFutureDate from "../hooks/UseDateAndTime";
-import useFutureDatePelass from "../hooks/UseDateAndTimePelass";
+import ImageSelector from "../../store/ImageSelector";
+import useFutureDate from "../hooks/useFutureDate";
 
+function FutearWeekPanel({ dayNumberFrom, futearCast, dayNumberTill }) {
+  const presentTime = useSelector((state) => state.times.presentTime);
+  const temperType = useSelector((state) => state.times.temperType);
 
+  const avTempC =
+    presentTime?.forecast?.forecastday[futearCast]?.day?.avgtemp_c;
+  const avTempF =
+    presentTime?.forecast?.forecastday[futearCast]?.day?.avgtemp_f;
+  const Condition =
+    presentTime?.forecast?.forecastday[futearCast]?.day?.condition?.text;
 
-function FutearWeekPanel({dayNumberFrom,futearCast,dayNumberTill}){
+  const getRandomMultiplier = () => Math.random() * (1.3 - 0.9) + 0.9;
+  const randomnumber = getRandomMultiplier();
 
+  const { futureDate: fromDate } = useFutureDate(dayNumberFrom); // Get the future date and day
+  const { futureDate: tillDate } = useFutureDate(dayNumberTill);
 
-  const forcastPeriodType = useSelector(state => state.times.forcastPeriodType);
-  const presentTime = useSelector(state => state.times.presentTime);
-  const temperType = useSelector(state => state.times.temperType);
-  
-  
-  
-  const avTempC = presentTime?.forecast?.forecastday[futearCast]?.day?.avgtemp_c;
-  const avTempF = presentTime?.forecast?.forecastday[futearCast]?.day?.avgtemp_f;
-  const Condition =  presentTime?.forecast?.forecastday[futearCast]?.day?.condition?.text;
-  const randomnumber = Math.random()
-  
-  
-  const { futureDate} = useFutureDate(dayNumberFrom); // Get the future date and day
-  const {futureDatePelass} = useFutureDatePelass(dayNumberTill)
-
-
-
-
-  // console.log(Condition);
-
-  
-    return(
-        <div className="day-box">
-        <div className="tim-box">
-          <div className="date">
-            {futureDate}
-          </div>
-          <div className="date">                
-          {futureDatePelass}
-          </div>
-        </div>
-        <ImageSelector CN={"img"} condition={Condition}/>
-        <div className="value-panel">
-          <h3 className="value v-temp">
-           {temperType === 'c'
-            ? parseInt(avTempC *randomnumber)
-            : parseInt(avTempF *randomnumber)
-            }^
-          </h3>
-          <p className="title-panel">temperetor</p>
-        </div>
+  return (
+    <div className="day-box">
+      <div className="tim-box">
+        <div className="date">{fromDate}</div>
+        <div className="date">{tillDate}</div>
       </div>
-    );
+      <ImageSelector CN={"img"} condition={Condition} />
+      <div className="value-panel">
+        <h3 className="value v-temp">
+          {temperType === "c"
+            ? parseInt(avTempC * randomnumber) + "C°"
+            : parseInt(avTempF * randomnumber) + "F°"}
+        </h3>
+        <p className="title-panel">temperetor</p>
+      </div>
+    </div>
+  );
 }
 
 export default FutearWeekPanel;

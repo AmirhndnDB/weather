@@ -1,13 +1,11 @@
 // slices/searchSlice.js
-import { createSlice } from '@reduxjs/toolkit';
-import { fetchSearchData } from '../thunks/fetchSearchData';
-
+import { createSlice } from "@reduxjs/toolkit";
+import { fetchSearchData } from "../thunks/fetchSearchData";
 
 const searchSlice = createSlice({
-  name: 'header',
+  name: "search",
   initialState: {
-    searchTerm: '',
-    header:"" ,
+    searchTerm: "",
     receivedData: [],
     isLoading: false,
     error: null,
@@ -16,10 +14,7 @@ const searchSlice = createSlice({
     changeSearchTerm(state, action) {
       state.searchTerm = action.payload;
     },
-    
-    changeHeader (state, action){
-      state.header =  action.payload;
-    },
+
     clierRecivedData(state) {
       state.receivedData = [];
     },
@@ -40,5 +35,5 @@ const searchSlice = createSlice({
   },
 });
 
-export const {changeSearchTerm, changeHeader ,clierRecivedData} = searchSlice.actions;
-export const headerReducer = searchSlice.reducer;
+export const { changeSearchTerm, clierRecivedData } = searchSlice.actions;
+export const searchReducer = searchSlice.reducer;

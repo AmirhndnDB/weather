@@ -1,17 +1,26 @@
-
 import FutearWeekPanel from "./FutearWeekPanel";
-function FutearWeek(){
+function FutearWeek() {
+  const weekPanels = [
+    { from: 7, to: 13, cast: 1 },
+    { from: 14, to: 20, cast: 1 },
+    { from: 21, to: 27, cast: 1 },
+    { from: 28, to: 34, cast: 1 },
+    { from: 35, to: 41, cast: 1 },
+    { from: 42, to: 48, cast: 1 },
+  ];
 
-    return( 
+  return (
     <div className="days">
-        <FutearWeekPanel  dayNumberFrom={7} dayNumberTill={13}  futearCast={1} />
-        <FutearWeekPanel  dayNumberFrom={14} dayNumberTill={20} futearCast={1} />
-        <FutearWeekPanel  dayNumberFrom={21} dayNumberTill={27} futearCast={0} />
-        <FutearWeekPanel  dayNumberFrom={28} dayNumberTill={34} futearCast={1} />
-        <FutearWeekPanel  dayNumberFrom={35} dayNumberTill={35} futearCast={2} />
-        <FutearWeekPanel  dayNumberFrom={42} dayNumberTill={41} futearCast={0} />
+      {weekPanels.map((item, idx) => (
+        <FutearWeekPanel
+          key={idx}
+          dayNumberFrom={item.from}
+          dayNumberTill={item.to}
+          futearCast={item.cast}
+        />
+      ))}
     </div>
-    )
+  );
 }
 
-export default FutearWeek ;
+export default FutearWeek;
