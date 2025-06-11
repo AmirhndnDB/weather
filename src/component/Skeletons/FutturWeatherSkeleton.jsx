@@ -139,21 +139,3 @@ export default function FutureWeatherSkeleton() {
   );
 }
 
-// <section className="grid-items the-future-weather">
-//   <h2 className="title">Future Weather</h2>
-//   <div className="pishbini-havaye-aty">
-//     {Array.from({ length: 7 }).map((_, index) => (
-//       <div key={index} className="pishbini-har-saat">
-//         <Skeleton variant="text" width="3.5rem" height="1rem" />
-//         <Skeleton
-//           variant="circular"
-//           width="2.5rem"
-//           height="2.5rem"
-//           className="weather-icon"
-//         />
-//         <Skeleton variant="text" width="3rem" height="1rem" />
-//         <Skeleton variant="text" width="3rem" height="1rem" />
-//       </div>
-//     ))}
-//   </div>
-// </section>

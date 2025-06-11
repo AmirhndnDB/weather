@@ -18,7 +18,6 @@ function FutearHoursWeather({ hoursNumb }) {
 
   const { condition, temp_c, temp_f } = hourData;
 
-  // console.log(condition, temp_c, temp_f);
 
   return (
     <div className="pishbini-har-saat">

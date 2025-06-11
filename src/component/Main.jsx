@@ -26,9 +26,7 @@ function Main() {
     // dispatch(fetchForcastData())
   }, [dispatch]);
 
-  console.log(isLoading)
-  console.log(error)
-  console.log(LocationData)
+ 
 
 
 

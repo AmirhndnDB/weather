@@ -14,7 +14,6 @@ if(error){
 if(!main || !sub){
   return <div className="news-panel"> we don't have  any news</div>
 }
-  // console.log(NewsText)
 
     return(
         <div className="news-panel">

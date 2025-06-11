@@ -92,17 +92,3 @@ export default function NewsSkeleton() {
   );
 }
 
-// <section className="grid-items the-news-section">
-//   <h2 className="title">Weather News</h2>
-//   <div className="news-items">
-//     {Array.from({ length: 3 }).map((_, index) => (
-//       <div key={index} className="news-card">
-//         <Skeleton variant="rectangular" width="100%" height="6rem" />
-//         <div style={{ marginTop: "0.5rem" }}>
-//           <Skeleton variant="text" width="80%" height="1.25rem" />
-//           <Skeleton variant="text" width="60%" height="1rem" />
-//         </div>
-//       </div>
-//     ))}
-//   </div>
-// </section>
